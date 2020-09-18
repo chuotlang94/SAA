@@ -1,0 +1,289 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="com.saaprojSAADevlopment.controller.RetirementView" xmlns:html="http://www.w3.org/1999/xhtml">
+	<NavContainer id="navCon2" width="100%" height="100%" class="navContainerControl sapUiSmallMarginBottom">
+		<App backgroundImage="{dataModel>/images/30}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>
+						<!--<html:div>-->
+						<!--	<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_row_header">-->
+						<!--		<html:div class="col-md-3 col-lg-3 col-sm- col-xs-12"></html:div>-->
+						<!--		<html:div class="col-md-7 col-lg-7 col-xs-8 col-sm-12">-->
+						<Text text="{i18n>retirementTitle}" class="retirementTitle"></Text>
+						<!--		</html:div>-->
+						<!--		<html:div class="col-md-2 col-lg-2 col-xs-2 col-sm-12"></html:div>-->
+						<!--	</html:div>-->
+						<!--</html:div>-->
+					</content>
+					<footer>
+						<Toolbar>
+							<Button text="Prev" press="handleNavPrev" enabled="{= ${dataModel>/currentPage} > 0 }"/>
+							<ToolbarSpacer/>
+							<Button text="Next" press="handleNavNext" enabled="{= ${dataModel>/totalPages} -1 !== ${dataModel>/currentPage} }"/>
+							<Text text="{= ${dataModel>/pages}.length === ${dataModel>/currentPage} }"/>
+						</Toolbar>
+					</footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/31}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>
+						<!--<html:div>-->
+						<!--	<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_row_header">-->
+						<!--		<html:div class="col-md-3 col-lg-3 col-sm- col-xs-12"></html:div>-->
+						<!--		<html:div class="col-md-7 col-lg-7 col-xs-8 col-sm-12">-->
+						<Text text="{i18n>retirementTitle}" class="solutiontitle1"></Text>
+						<!--		</html:div>-->
+						<!--		<html:div class="col-md-2 col-lg-2 col-xs-2 col-sm-12"></html:div>-->
+						<!--	</html:div>-->
+						<!--</html:div>-->
+					</content>
+					<footer>
+						<Toolbar>
+							<Button text="Prev" press="handleNavPrev" enabled="{= ${dataModel>/currentPage} > 0 }"/>
+							<ToolbarSpacer/>
+							<Button text="Next" press="handleNavNext" enabled="{= ${dataModel>/totalPages} -1 !== ${dataModel>/currentPage} }"/>
+							<Text text="{= ${dataModel>/pages}.length === ${dataModel>/currentPage} }"/>
+						</Toolbar>
+					</footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/32}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>
+						<!--<html:div>-->
+						<!--	<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 dreamHeadTop">-->
+						<!--		<html:div class="col-md-1 col-lg-1 col-sm-1 col-xs-3"></html:div>-->
+						<!--		<html:div class="col-md-10 col-lg-10 col-xs-12 col-sm-12">-->
+						<Text text="{i18n>lblRetirePlan}" class="solutiontitle1 redColor"></Text>
+						<!--		</html:div>-->
+						<!--		<html:div class="col-md-1 col-lg-1 col-xs-3 col-sm-1"></html:div>-->
+						<!--	</html:div>-->
+						<!--</html:div>-->
+						<!--<html:div class="row">-->
+						<!--<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowpHealth">-->
+						<!--	<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>-->
+						<!--	<html:div class="col-md-9 col-lg-9 col-sm-6 col-xs-6 rowMa">-->
+						<HBox class="HboxLeft">
+							<Button text="{i18n>butRetiUnder55}" class="buttonCol buttonPad "></Button>
+							<Button text="{i18n>butRetiUnder5560}" class="buttonCol buttonPad butMargRet "></Button>
+							<Button text="{i18n>butRetiOver60}" class="buttonCol buttonPad butMargRet"></Button>
+						</HBox>
+						<!--<Button text="Under 55 years old"></Button>-->
+						<!--<Button text="Under 55 years old"></Button>-->
+						<!--		</html:div>-->
+						<!--		<html:div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"></html:div>-->
+						<!--	</html:div>-->
+						<!--</html:div>-->
+						<!--<html:div class="row ">-->
+						<!--	<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">-->
+						<!--<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>-->
+						<!--		<html:div class="col-md-10 col-lg-10 col-sm-6 col-xs-6 ">-->
+						<Image src="{dataModel>/images/5560}" class="sliderImage"></Image>
+						<!--		</html:div>-->
+						<!--		<html:div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"></html:div>-->
+						<!--	</html:div>-->
+						<!--</html:div>-->
+					</content>
+					<footer>
+						<Toolbar>
+							<Button text="Prev" press="handleNavPrev" enabled="{= ${dataModel>/currentPage} > 0 }"/>
+							<ToolbarSpacer/>
+							<Button text="Next" press="handleNavNext" enabled="{= ${dataModel>/totalPages} -1 !== ${dataModel>/currentPage} }"/>
+							<Text text="{= ${dataModel>/pages}.length === ${dataModel>/currentPage} }"/>
+						</Toolbar>
+					</footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/33}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_row_header">
+								<html:div class="col-md-1 col-lg-1 col-sm-1 col-xs-3"></html:div>
+								<html:div class="col-md-7 col-lg-7 col-xs-12 col-sm-12">
+									<!--<html:h1 style="color:#003770" >-->
+									<Text text="{i18n>lblRetireLive}" class="icon_row_header_textp4 redColor"></Text>
+									<!--</html:h1>-->
+								</html:div>
+								<html:div class="col-md-4 col-lg-4 col-xs-3 col-sm-1"></html:div>
+							</html:div>
+						</html:div>
+						<html:div class="row">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowpFamily">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<Image src="{dataModel>/images/Goback_hometown}" width="246px" height="246px"></Image>
+									</html:div>
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<Image src="{dataModel>/images/Staywhere_I_am}" width="246px" height="246px"></Image>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-5 col-lg-5 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<footer>
+						<Toolbar>
+							<Button text="Prev" press="handleNavPrev" enabled="{= ${dataModel>/currentPage} > 0 }"/>
+							<ToolbarSpacer/>
+							<Button text="Next" press="handleNavNext" enabled="{= ${dataModel>/totalPages} -1 !== ${dataModel>/currentPage} }"/>
+							<!--<Text text="{= ${dataModel>/pages}.length === ${dataModel>/currentPage} }"/>-->
+						</Toolbar>
+					</footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/34}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_row_header ">
+								<html:div class="col-md-1 col-lg-1 col-sm-1 col-xs-3"></html:div>
+								<html:div class="col-md-7 col-lg-7 col-xs-12 col-sm-12">
+									<!--<html:h1 style="color:#003770" >-->
+									<Text text="{i18n>lblRetireWhatPlan}" class="icon_row_header_textp4 redColor"></Text>
+									<!--</html:h1>-->
+								</html:div>
+								<html:div class="col-md-4 col-lg-4 col-xs-3 col-sm-1"></html:div>
+							</html:div>
+						</html:div>
+						<html:div class="row">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowpFamily5">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<Image src="{dataModel>/images/travelWithMyPartner}" width="246px" height="246px"></Image>
+									</html:div>
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<Image src="{dataModel>/images/Have_a_Farm}" width="246px" height="246px"></Image>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-5 col-lg-5 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+						<html:div class="row">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowpFamily12">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<Image src="{dataModel>/images/Enjoy_Social_Activities}" width="246px" height="246px"></Image>
+									</html:div>
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<Image src="{dataModel>/images/Run_asmallBuisness}" width="246px" height="246px"></Image>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-5 col-lg-5 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<footer>
+						<Toolbar>
+							<Button text="Prev" press="handleNavPrev" enabled="{= ${dataModel>/currentPage} > 0 }"/>
+							<ToolbarSpacer/>
+							<Button text="Next" press="handleNavNext" enabled="{= ${dataModel>/totalPages} -1 !== ${dataModel>/currentPage} }"/>
+							<!--<Text text="{= ${dataModel>/pages}.length === ${dataModel>/currentPage} }"/>-->
+						</Toolbar>
+					</footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/35}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>
+						<!--<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 custMarg">-->
+						<!--	<html:div class="col-md-1 col-lg-1 col-sm-1 col-xs-3"></html:div>-->
+						<!--	<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">-->
+						<html:div class="row">
+							<html:div class="col-md-8 col-lg-8 col-sm-1 col-xs-3">
+							<Text text="{i18n>lblRetireMoneySet}" class="solutiontitle1 whiteColor"></Text>
+								</html:div>
+						</html:div>
+						<!--	</html:div>-->
+						<!--	<html:div class="col-md-5 col-lg-5 col-xs-3 col-sm-1"></html:div>-->
+						<!--</html:div>-->
+						<html:div class="row ">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowp4 custROW ">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<HBox >
+											<Input value="70.000.000 " class="inputfamily sapUiLargeMarginBegin inpuHegut redColor"></Input><Input editable="false" value="VND" class="txtvndfamily txtHeight redColor"/></HBox>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<footer>
+						<Toolbar>
+							<Button text="Prev" press="handleNavPrev" enabled="{= ${dataModel>/currentPage} > 0 }"/>
+							<ToolbarSpacer/>
+							<Button text="Next" press="handleNavNext" enabled="{= ${dataModel>/totalPages} -1 !== ${dataModel>/currentPage} }"/>
+							<!--<Text text="{= ${dataModel>/pages}.length === ${dataModel>/currentPage} }"/>-->
+						</Toolbar>
+					</footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/36}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>
+							<html:div class="row">
+							<html:div class="col-md-8 col-lg-8 col-sm-1 col-xs-3">
+							<Text text="{i18n>lblRetireTotalIncome}" class="solutiontitle1 "></Text>
+								</html:div>
+						</html:div>
+						<!--<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 custMarg">-->
+						<!--	<html:div class="col-md-1 col-lg-1 col-sm-1 col-xs-3"></html:div>-->
+						<!--	<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">-->
+						<!--		<Text text="{i18n>lblRetireTotalIncome}" class="h1Health textFont"></Text>-->
+						<!--	</html:div>-->
+						<!--	<html:div class="col-md-5 col-lg-5 col-xs-3 col-sm-1"></html:div>-->
+						<!--</html:div>-->
+						<html:div class="row ">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowp4 custROW ">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<HBox >
+											<Input value="70.000.000 " class="inputfamily sapUiLargeMarginBegin inpuHegut redColor"></Input><Input editable="false" value="VND" class="txtvndfamily txtHeight redColor"/></HBox>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<footer>
+						<Toolbar>
+							<Button text="Prev" press="handleNavPrev" enabled="{= ${dataModel>/currentPage} > 0 }"/>
+							<ToolbarSpacer/>
+							<Button text="Next" press="handleNavNext" enabled="{= ${dataModel>/totalPages} -1 !== ${dataModel>/currentPage} }"/>
+							<!--<Text text="{= ${dataModel>/pages}.length === ${dataModel>/currentPage} }"/>-->
+						</Toolbar>
+					</footer>
+				</Page>
+			</pages>
+		</App>
+	</NavContainer>
+</mvc:View>

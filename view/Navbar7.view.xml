@@ -1,0 +1,95 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.saaprojSAADevlopment.controller.Navbar"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+
+	<html:nav class="navbar navbar-default navbarBlueColor">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<html:div class="navbar-header">
+			<html:button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+				aria-expanded="false">
+				<html:span class="sr-only">Toggle navigation</html:span>
+				<html:span class="icon-bar"></html:span>
+				<html:span class="icon-bar"></html:span>
+				<html:span class="icon-bar"></html:span>
+			</html:button>
+			<!--<html:a class="navbar-brand">-->
+			<!--</html:a>-->
+		</html:div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<html:div class="collapse navbar-collapse" style="padding:0px;" id="bs-example-navbar-collapse-1">
+			<html:ul class="nav navbar-nav" id="idNavbar">
+				<html:li >
+					<html:a >
+						<Image src="{dataModel>/images/menubar}" class="menuBar1 toggleNavBar toggleNavBarExpanded" press="toggleNavBarExpanded"></Image>
+					</html:a>
+				</html:li>
+				<html:li >
+					<!--<html:a href="#" class="header_text nuvan_custom">NGUYUN THI KANHA HUYEN-->
+					<!--	<html:span class="spanPadd">Insurance Consultant</html:span>-->
+					<!--</html:a>-->
+					<html:div class="nuynaHeader">
+						<VBox>
+							<!--<Text class="header_text nuvan_custom" text="NGUYUN THI KHANH HUYEN" ></Text>-->
+							<!--<Button text="Quote Navigation" press="quoteNaviagte"></Button>-->
+							<Link text="NGUYUN THI KHANH HUYEN" class="header_text nuvan_custom" press="toggleFullScreen"></Link>
+							<Text class="spanPadd" text="Insurance Consultant"></Text>
+						</VBox>
+						<!--<html:span class="spanPadd">Insurance Consultant</html:span>-->
+					</html:div>
+				</html:li>
+				<html:li class="li-custom liAbout ">
+					<Link press="onAboutYou" class="header_link nav_items  liCustomMarginAbout aboutYou white1" id="idAbout"
+						text="{i18n>navAboutYou}" tooltip="About"/>
+					<!--<html:a  onclick="someFunction()">ABOUT YOU</html:a>-->
+				</html:li>
+				<html:li class="li-custom liInterest">
+					<Link press="onInterest" class="header_link nav_items liCustomMarginAbout interest white1" id="idInterest" text="{i18n>navInterest}"/>
+					<!--<html:a href="#">INTEREST</html:a>-->
+				</html:li>
+				<html:li class="li-custom liDetails">
+					<Link press="onDetails" class="header_link nav_items liCustomMarginAbout details white1" id="idDetails" text="{i18n>navDetails}"/>
+					<!--<html:a href="#">DETAILS</html:a>-->
+				</html:li>
+				<html:li class="li-custom liSolution">
+					<Link press="onSolution" class="header_link nav_items liCustomMarginAbout solution white1" id="idSolution" text="{i18n>navSolution}"/>
+					<!--<html:a href="#">SOLUTION</html:a>-->
+				</html:li>
+				<html:li class="li-custom liProduct">
+					<Link press="onProduct" class="header_link nav_items liCustomMarginAbout product white1" id="idProduct" text="{i18n>navProduct}"/>
+					<!--<html:a href="#">PRODUCT</html:a>-->
+				</html:li>
+			</html:ul>
+			<html:ul class="nav navbar-nav navbar-right rightUl">
+				<html:li>
+					<!--<html:a href="#">FullScreen</html:a>-->
+					<html:a style="padding:0px;">
+						<Image src="{dataModel>/images/logowhite}" class="responsive navBarLogo" alt="Logo"></Image>
+					</html:a>
+					<!--<Link press="toggleFullScreen" class="header_link" text="FullScreen"/>-->
+				</html:li>
+			</html:ul>
+		</html:div>
+	</html:nav>
+	<html:div id="mySidenav" class="sidenav">
+		<!--<Link text="&#215;" class="closebtn" press="toggleNavBarExpanded"/>-->
+		<HBox>
+			<Link text="{i18n>lblSideHome}" press="navigateToHome" width="217px"></Link>
+			<Image src="{dataModel>/images/home}" class="Sidenavbar" press="navigateToHome"></Image>
+		</HBox >
+		<html:hr class="hrPrdding"></html:hr>
+		<HBox class="sidebarHBox"><Link text="{i18n>lblSideCustomerInformation}" press="customerInformation" width="217px"/>
+			<Image src="{dataModel>/images/information}" class="Sidenavbar" press="navigateToHome"></Image>
+		</HBox >
+		<html:hr class="hrPrdding"></html:hr>
+		<HBox class="sidebarHBox">
+			<Link text="{i18n>lblSideStartAgain}" press="onClickOfStartAgain" width="217px"/>
+			<Image src="{dataModel>/images/refresh}" class="Sidenavbar" press="onClickOfStartAgain"></Image>
+		</HBox>
+		<html:hr class="hrPrdding"></html:hr>
+		<!--<Link text="{i18n>lblSideFeedback}" press="navigateToPage"/>-->
+		<HBox class="sidebarHBox">
+			<Link text="{i18n>lblSideContactUs}" press="contactUs" width="217px"/>
+			<Image src="{dataModel>/images/phone}" class="Sidenavbar" press="navigateToHome"></Image>
+		</HBox>
+	</html:div>
+	
+</mvc:View>

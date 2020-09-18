@@ -1,0 +1,91 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m" controllerName="com.saaprojSAADevlopment.controller.Home"
+	xmlns="http://www.w3.org/1999/xhtml" xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<m:App backgroundImage="{dataModel>/images/home_screen}" id="idHome" class="home1">
+		<m:pages>
+			<m:Page showHeader="false">
+				<m:content class="disablescroll">
+					<div id="mySidenav" class="sidenav">
+						<!--<m:Link text="&#215;" class="closebtn" press="toggleNavBarExpanded"/>-->
+						<!--<Image src="{dataModel>/images/menubar}" class="menuBar closebtn" press="toggleNavBarExpanded"></Image>-->
+						<m:HBox>
+							<m:Link text="{i18n>lblSideHome}" press="navigateToHome" width="217px"></m:Link>
+							<m:Image src="{dataModel>/images/home}" class="Sidenavbar" press="navigateToHome"></m:Image>
+						</m:HBox>
+						<hr class="hrPrdding"></hr>
+						<m:HBox class="sidebarHBox"><m:Link text="{i18n>lblSideCustomerInformation}" press="customerInformation" width="217px"/>
+							<m:Image src="{dataModel>/images/information}" class="Sidenavbar" press="navigateToHome"></m:Image>
+						</m:HBox>
+						<hr class="hrPrdding"></hr>
+						<m:HBox class="sidebarHBox">
+							<m:Link text="{i18n>lblSideStartAgain}" press="onClickOfStartAgain" width="217px"/>
+							<m:Image src="{dataModel>/images/refresh}" class="Sidenavbar" press="onClickOfStartAgain"></m:Image>
+						</m:HBox >
+						<hr class="hrPrdding"></hr>
+						<!--<Link text="{i18n>lblSideFeedback}" press="navigateToPage"/>-->
+						<m:HBox class="sidebarHBox">
+							<m:Link text="{i18n>lblSideContactUs}" press="contactUs" width="217px"/>
+							<m:Image src="{dataModel>/images/phone}" class="Sidenavbar" press="navigateToHome"></m:Image>
+						</m:HBox>
+					</div>
+					<!--<m:Button text="&#9776;" class="toggleNavBar toggleNavBarExpanded but" press="toggleNavBarExpanded"/>-->
+					<m:Image src="{dataModel>/images/menubar}" class="toggleNavBar toggleNavBarExpanded menuBar" press="toggleNavBarExpanded"></m:Image>
+					<!--<m:FlexBox width="100%">-->
+					<footer class="footerhome">
+						<!--<div class="container saaHome fixed-bottom" style="height:700px">
+						<div class="row h-100" style="margin: -65px 0px 0px 0px;height:105px">
+							<div class="col-sm-7 my-auto">
+								<m:Text text="{i18n>lblHomeTitle}" class="bold saaTitle"/>
+								<br/>
+								<m:Text text="{i18n>lblHomeSubTitle}" class="saaText"/>
+							</div>
+							<div class="col-sm-5 my-auto pull-right text-right">
+								<m:Image src="{dataModel>/images/logoMBAL}" class="saaHomeLogo"/>
+							</div>
+						</div>
+						<div class="row h-100 saaContentCenter">
+							<div class="col-sm-12 my-auto ">
+								<m:HBox class="saaHBOX">
+									<m:Text text="{i18n>lblLanguage}" class=" light saaTextLanguage"/>
+									<m:Select forceSelection="true" class="my-auto marginRightNormal dropdown" id="idLanguageSelect" change="languageChange"
+										selectedKey="{LData>/lnguageOdata/languageSelect}">
+										<core:Item key="vi" text="Vietnamese"/>
+										<core:Item key="en" text="English"/>
+									</m:Select>
+									<m:Button text="{i18n>lblStartButton}" class="startButton" press="navigateToPage"></m:Button>
+								</m:HBox>
+							</div>
+						</div>
+					</div>-->
+					<div class="container saaHome fixed-bottom" style="">
+						<div class="row h-100" style="margin: -65px 0px 0px 0px;height:105px">
+							<div class="col-sm-7 my-auto">
+								<m:Text text="{i18n>lblHomeTitle}" class="bold saaTitle"/>
+								<br/>
+								<m:Text text="{i18n>lblHomeSubTitle}" class="saaText"/>
+							</div>
+							<div class="col-sm-5 my-auto pull-right text-right">
+								<m:Image src="{dataModel>/images/logoMBAL}" class="saaHomeLogo"/>
+							</div>
+						</div>
+						<div class="row h-100 saaContentCenter">
+							<div class="col-sm-12 my-auto ">
+								<m:HBox class="saaHBOX">
+									<m:Text text="{i18n>lblLanguage}" class=" light saaTextLanguage"/>
+									<m:Select forceSelection="true" class="my-auto marginRightNormal dropdown" id="idLanguageSelect" change="languageChange"
+										selectedKey="{LData>/lnguageOdata/languageSelect}">
+										<core:Item key="vi" text="Vietnamese"/>
+										<core:Item key="en" text="English"/>
+									</m:Select>
+									<m:Button text="{i18n>lblStartButton}" class="startButton" press="navigateToPage"></m:Button>
+								</m:HBox>
+							</div>
+						</div>
+					</div>
+					</footer>
+					
+					<!--</m:FlexBox>-->
+				</m:content>
+			</m:Page>
+		</m:pages>
+	</m:App>
+</mvc:View>

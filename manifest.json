@@ -1,0 +1,247 @@
+{
+    "_version": "1.5.0",
+    "sap.app": {
+        "id": "com.saaprojSAADevlopment",
+        "type": "application",
+        "i18n": "i18n/i18n_vi.properties",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "sourceTemplate": {
+            "id": "servicecatalog.connectivityComponent",
+            "version": "0.0.0"
+        },
+        "dataSources": {
+            "ZMSG_SAA_SRV": {
+                "uri": "/sap/opu/odata/sap/ZMSG_SAA_SRV/",
+                "type": "OData",
+                "settings": {
+                    "odataVersion": "2.0",
+                    "localUri": "localService/metadata.xml"
+                }
+            }
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        },
+        "supportedThemes": [
+            "sap_hcb",
+            "sap_belize"
+        ]
+    },
+    "sap.ui5": {
+        "rootView": {
+            "viewName": "com.saaprojSAADevlopment.view.App",
+            "type": "XML"
+        },
+        "dependencies": {
+            "minUI5Version": "1.30.0",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {},
+                "sap.ui.layout": {},
+                "sap.ushell": {},
+                "sap.collaboration": {},
+                "sap.ui.comp": {},
+                "sap.uxap": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "com.saaprojSAADevlopment.i18n.i18n_vi"
+                }
+            },
+            "": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneTime",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZMSG_SAA_SRV",
+                "preload": true
+            },
+            "assistantModel": {
+                "type": "sap.ui.model.json.JSONModel",
+                "settings": {},
+                "preload": false
+            }
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "css/style.css"
+                },
+                {
+                    "uri": "css/bootstrap.css",
+                    "id": ""
+                }
+            ]
+        },
+        "routing": {
+            "targets": {
+                "home": {
+                    "viewName": "Home",
+                    "viewLevel": 0
+                },
+                "first": {
+                    "viewName": "View1",
+                    "viewLevel": 1
+                },
+                "detailspage": {
+                    "viewName": "DetailsPage",
+                    "viewLevel": 1
+                },
+                "helathpage": {
+                    "viewName": "HealthView",
+                    "viewLevel": 1
+                },
+                "interestepage": {
+                    "viewName": "InterestView",
+                    "viewLevel": 1
+                },
+                "familypage": {
+                    "viewName": "FamilyView",
+                    "viewLevel": 1
+                },
+                "retirementpage": {
+                    "viewName": "RetirementView",
+                    "viewLevel": 1
+                },
+                "educatiopage": {
+                    "viewName": "Education",
+                    "viewLevel": 1
+                },
+                "dreamspage": {
+                    "viewName": "DreamsView",
+                    "viewLevel": 1
+                },
+                "solutionpage": {
+                    "viewName": "SolutionView",
+                    "viewLevel": 1
+                },
+                "productpage": {
+                    "viewName": "ProductView",
+                    "viewLevel": 1
+                },
+                "customerinfopage": {
+                    "viewName": "CustomerInforamation",
+                    "viewLevel": 1
+                },
+                "contactuspage": {
+                    "viewName": "ContactUs",
+                    "viewLevel": 1
+                },
+                "videoHomeScreen": {
+                    "viewName": "videoScreen",
+                    "viewLevel": 1
+                }
+            },
+            "routes": [
+                {
+                    "name": "home",
+                    "pattern": "",
+                    "target": "home"
+                },
+                {
+                    "name": "first",
+                    "pattern": "aboutyou",
+                    "target": "first"
+                },
+                {
+                    "name": "detailspage",
+                    "pattern": "detailspage",
+                    "target": "detailspage"
+                },
+                {
+                    "name": "helathpage",
+                    "pattern": "helath",
+                    "target": "helathpage"
+                },
+                {
+                    "name": "interestepage",
+                    "pattern": "interest",
+                    "target": "interestepage"
+                },
+                {
+                    "name": "familypage",
+                    "pattern": "family",
+                    "target": "familypage"
+                },
+                {
+                    "name": "retirementpage",
+                    "pattern": "retirement",
+                    "target": "retirementpage"
+                },
+                {
+                    "name": "educatiopage",
+                    "pattern": "education",
+                    "target": "educatiopage"
+                },
+                {
+                    "name": "dreamspage",
+                    "pattern": "dreams",
+                    "target": "dreamspage"
+                },
+                {
+                    "name": "solutionpage",
+                    "pattern": "solution",
+                    "target": "solutionpage"
+                },
+                {
+                    "name": "productpage",
+                    "pattern": "product",
+                    "target": "productpage"
+                },
+                {
+                    "name": "customerinfopage",
+                    "pattern": "customerInformation",
+                    "target": "customerinfopage"
+                },
+                {
+                    "name": "contactuspage",
+                    "pattern": "ContactUs",
+                    "target": "contactuspage"
+                },
+                {
+                    "name": "videoHomeScreen",
+                    "pattern": "HomeScreen",
+                    "target": "videoHomeScreen"
+                }
+            ],
+            "config": {
+                "viewPath": "com.saaprojSAADevlopment.view",
+                "viewType": "XML",
+                "controlId": "app",
+                "controlAggregation": "pages",
+                "async": true,
+                "routerClass": "sap.m.routing.Router"
+            }
+        }
+    },
+    "sap.platform.abap": {
+        "uri": "/sap/bc/ui5_ui5/sap/zmsg_saa",
+        "_version": "1.1.0"
+    }
+}

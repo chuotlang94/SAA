@@ -1,0 +1,1034 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="com.saaprojSAADevlopment.controller.SolutionView" xmlns:html="http://www.w3.org/1999/xhtml">
+	<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>-->
+	<NavContainer id="navConSolution" width="100%" height="100%" class="navContainerControl sapUiSmallMarginBottom">
+		<!--Education 0 -->
+		<!--Veitnam-->
+		<App backgroundImage="{dataModel>/images/children43}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar4"/>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<Text text="{i18n>lblSoultionEdu1}" class="solutionMainTitle blueColor"></Text>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionForChildrenEducation'}, {path:'view>/number'}, {path:'view>/selectedChild'},{path:'view>/childrenAgePass'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart "></Text>
+									<!--SavingGreater-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionForChildrenGreater'},{path:'view>/selectedEducationCity'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="educationPart41" visible="false"></Text>
+									<!--SavingLess-->
+									<Text text="{parts:[{path:'i18n>dataSolutionForChildrenLesser'},{path:'view>/totalCalculation'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="educationPart42" visible="false"></Text>
+									<!--SavingEqual-->
+									<Text text="{parts:[{path:'i18n>dataSolutionForChildrenEqual'},{path:'view>/totalCalculation'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="educationPart43" visible="false"></Text>
+									<!--TotalIncome-->
+									<Text text="{parts:[{path:'i18n>dataSolutionTotalIcomeEducation'},{path:'view>/perOfTotalIncom'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="totalEducation3" visible="false"></Text>
+									<!--<Text text="{parts:[{path:'i18n>dataSolutionLetUsShow'}], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph " visible="true"></Text>-->
+								</html:div>
+								<html:div class="col-md-5 col-lg-5 col-xs-12 col-sm-12">
+									<VBox class="veitnamVboxEn" id="idVietnamEn">
+										<!--<Text text="Doctor"></Text>-->
+										<Text text="{view>/degreeString}" class="veitnamDegreeEn"></Text>
+										<Text text="{view>/selectedChild}" class="veitnameNameEn"></Text>
+									</VBox>
+									<VBox class="veitnamVboxVi" id="idVietnamVi">
+										<!--<Text text="Doctor"></Text>-->
+										<Text text="{view>/degreeString}" class="veitnamDegreeVi"></Text>
+										<Text text="{view>/selectedChild}" class="veitnameNameVi"></Text>
+									</VBox>
+								</html:div>
+								<html:div class="col-md-1 col-lg-1 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<!--Australia-->
+		<App backgroundImage="{dataModel>/images/children44}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar4"/>
+						<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>-->
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<Text text="{i18n>lblSoultionEdu2}" class="solutionMainTitle blueColor "></Text>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionForChildrenEducation'}, {path:'view>/number'}, {path:'view>/selectedChild'},{path:'view>/childrenAgePass'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart "></Text>
+									<!--SavingGreater-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionForChildrenGreater'},{path:'view>/selectedEducationCity'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="educationPart51" visible="false"></Text>
+									<!--SavingLess-->
+									<Text text="{parts:[{path:'i18n>dataSolutionForChildrenLesser'},{path:'view>/totalCalculation'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="educationPart52" visible="false"></Text>
+									<!--SavingEqual-->
+									<Text text="{parts:[{path:'i18n>dataSolutionForChildrenEqual'},{path:'view>/totalCalculation'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="educationPart53" visible="false"></Text>
+									<!--TotalIncome-->
+									<Text text="{parts:[{path:'i18n>dataSolutionTotalIcomeEducation'},{path:'view>/perOfTotalIncom'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="totalEducation4" visible="false"></Text>
+									<!--<Text text="{parts:[{path:'i18n>dataSolutionLetUsShow'}], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph " visible="true"></Text>-->
+								</html:div>
+								<html:div class="col-md-5 col-lg-5 col-xs-12 col-sm-12">
+									<VBox class="australiaVboxEn" id="idAustraliaEn">
+										<Text text="{view>/selectedChild}" class="australiaNameEn"></Text>
+										<Text text="{view>/degreeString}" class="australiaDegreeEn"></Text>
+										<!--<Text text="2025"></Text>-->
+									</VBox>
+									<VBox class="australiaVboxVi" id="idAustraliaVi">
+										<Text text="{view>/selectedChild}" class="australiaNameVi"></Text>
+										<Text text="{view>/degreeString}" class="australiaDegreeVi"></Text>
+										<!--<Text text="2025"></Text>-->
+									</VBox>
+								</html:div>
+								<html:div class="col-md-1 col-lg-1 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect "/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<!--Europe-->
+		<App backgroundImage="{dataModel>/images/children45}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar4"/>
+						<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>-->
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<Text text="{i18n>lblSoultionEdu3}" class="solutionMainTitle blueColor "></Text>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionForChildrenEducation'}, {path:'view>/number'}, {path:'view>/selectedChild'},{path:'view>/childrenAgePass'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart "></Text>
+									<!--SavingGreater-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionForChildrenGreater'},{path:'view>/selectedEducationCity'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="educationPart31" visible="false"></Text>
+									<!--SavingLess-->
+									<Text text="{parts:[{path:'i18n>dataSolutionForChildrenLesser'},{path:'view>/totalCalculation'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="educationPart32" visible="false"></Text>
+									<!--SavingEqual-->
+									<Text text="{parts:[{path:'i18n>dataSolutionForChildrenEqual'},{path:'view>/totalCalculation'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="educationPart33" visible="false"></Text>
+									<!--TotalIncome-->
+									<Text text="{parts:[{path:'i18n>dataSolutionTotalIcomeEducation'},{path:'view>/perOfTotalIncom'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="totalEducation2" visible="false"></Text>
+									<!--<Text text="{parts:[{path:'i18n>dataSolutionLetUsShow'}], formatter: 'jQuery.sap.formatMessage'}" class="solutionBodyPart " visible="true"></Text>-->
+								</html:div>
+								<html:div class="col-md-5 col-lg-5 col-xs-12 col-sm-12">
+									<VBox class="oxfordVboxEn" id="idOxfordCertificateEn">
+										<Text text="{view>/selectedChild}" class="oxfordNameEn"></Text>
+										<Text text="{view>/degreeString}" class="oxfordDegreeEn"></Text>
+										<!--<Text text="2025"></Text>-->
+									</VBox>
+									<VBox class="oxfordVboxVi" id="idOxfordCertificateVi">
+										<Text text="{view>/selectedChild}" class="oxfordNameVi"></Text>
+										<Text text="{view>/degreeString}" class="oxfordDegreeVi"></Text>
+										<!--<Text text="2025"></Text>-->
+									</VBox>
+								</html:div>
+								<html:div class="col-md-1 col-lg-1 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<!--America-->
+		<App backgroundImage="{dataModel>/images/children46}" class="idAppTest">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar4"/>
+						<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>-->
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<Text text="{i18n>lblSoultionEdu4}" class="solutionMainTitle blueColor "></Text>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionForChildrenEducation'}, {path:'view>/number'}, {path:'view>/selectedChild'},{path:'view>/childrenAgePass'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart "></Text>
+									<!--SavingGreater-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionForChildrenGreater'},{path:'view>/selectedEducationCity'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="educationPart21" visible="false"></Text>
+									<!--SavingLess-->
+									<Text text="{parts:[{path:'i18n>dataSolutionForChildrenLesser'},{path:'view>/totalCalculation'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="educationPart22" visible="false"></Text>
+									<!--SavingEqual-->
+									<Text text="{parts:[{path:'i18n>dataSolutionForChildrenEqual'},{path:'view>/totalCalculation'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="educationPart23" visible="false"></Text>
+									<!--TotalIncome-->
+									<Text text="{parts:[{path:'i18n>dataSolutionTotalIcomeEducation'},{path:'view>/perOfTotalIncom'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="totalEducation1" visible="false"></Text>
+									<!--<Text text="{parts:[{path:'i18n>dataSolutionLetUsShow'}], formatter: 'jQuery.sap.formatMessage'}" class="solutionBodyPart " visible="true"></Text>-->
+								</html:div>
+								<html:div class="col-md-5 col-lg-5 col-xs-12 col-sm-12">
+									<VBox class="harvardVboxEn" id="idHarvardCertificateEn">
+										<!--<Text text="Shubham Bankar"></Text>-->
+										<Text text="{view>/childrenAgePass}" class="harvardYearEn"></Text>
+										<Text text="{view>/degreeString}" class="harvardDegreeEn"></Text>
+									</VBox>
+									<VBox class="harvardVboxVi" id="idHarvardCertificateVi">
+										<!--<Text text="Shubham Bankar"></Text>-->
+										<Text text="{view>/childrenAgePass}" class="harvardYearVi"></Text>
+										<Text text="{view>/degreeString}" class="harvardDegreeVi"></Text>
+									</VBox>
+								</html:div>
+								<html:div class="col-md-1 col-lg-1 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<!--Asia-->
+		<App backgroundImage="{dataModel>/images/children47}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar4"/>
+						<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>-->
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<Text text="{i18n>lblSoultionEdu5}" class="solutionMainTitle blueColor "></Text>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionForChildrenEducation'}, {path:'view>/number'}, {path:'view>/selectedChild'},{path:'view>/childrenAgePass'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart "></Text>
+									<!--SavingGreater-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionForChildrenGreater'},{path:'view>/selectedEducationCity'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="educationPart61" visible="false"></Text>
+									<!--SavingLess-->
+									<Text text="{parts:[{path:'i18n>dataSolutionForChildrenLesser'},{path:'view>/totalCalculation'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="educationPart62" visible="false"></Text>
+									<!--SavingEqual-->
+									<Text text="{parts:[{path:'i18n>dataSolutionForChildrenEqual'},{path:'view>/totalCalculation'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="educationPart63" visible="false"></Text>
+									<!--TotalIncome-->
+									<Text text="{parts:[{path:'i18n>dataSolutionTotalIcomeEducation'},{path:'view>/perOfTotalIncom'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="totalEducation5" visible="false"></Text>
+									<!--<Text text="{parts:[{path:'i18n>dataSolutionLetUsShow'}], formatter: 'jQuery.sap.formatMessage'}" class="solutionBodyPart " visible="true"></Text>-->
+								</html:div>
+								<html:div class="col-md-5 col-lg-5 col-xs-12 col-sm-12">
+									<VBox class="asiaVboxEn" id="idAsiaEn">
+										<Text text="{view>/selectedChild}" class="asiaNameEn"></Text>
+										<Text text="{view>/degreeString}" class="asiaDegreeEn"></Text>
+										<Text text="{view>/childrenAgePass}" class="asiaYearEn"></Text>
+									</VBox>
+									<VBox class="asiaVboxVi" id="idAsiaVi">
+										<Text text="{view>/selectedChild}" class="asiaNameVi"></Text>
+										<Text text="{view>/degreeString}" class="asiaDegreeVi"></Text>
+										<Text text="{view>/childrenAgePass}" class="asiaYearVi"></Text>
+									</VBox>
+								</html:div>
+								<html:div class="col-md-1 col-lg-1 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<!--Retirement 5 -->
+		<!--Have A Farm-->
+		<App backgroundImage="{dataModel>/images/48}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar4"/>
+						<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>-->
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-10 col-lg-10 col-xs-12 col-sm-12">
+									<Text text="{i18n>lblSolutionRetirementTitle}" class="solutionRetireTitle blueColor"></Text>
+								</html:div>
+								<html:div class="col-md-2 col-lg-2 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<!--Single-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilySingle'}, {path:'view>/number'},{path:'view>/personAge'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="retirementPart1" visible="false"></Text>
+									<!--Married-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilyMarried'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="retirementPart2" visible="false"></Text>
+									<!--MarriedWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilyMarriedWithKids'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'},{path:'view>/totalChildren'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="retirementPart3" visible="false"></Text>
+									<!--SingleWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilySingleWithKids'},{path:'view>/number'},{path:'view>/personAge'},{path:'view>/totalChildren'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="retirementPart4" visible="false"></Text>
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionRetirementPart2'},{path:'view>/retireAgeInYear'},{path:'view>/stringAfterLiveRetirement'},{path:'view>/stringWantToDoWhenRetire'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph "></Text>
+									<!--SavingGreater-->
+									<Text text="{parts:[{path:'i18n>dataSolutionRetirementSavingGreater'} ], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph "
+										id="retirementPartCost31" visible="false"></Text>
+									<!--SavingLess-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionRetirementSavingLesser'},{path:'view>/totalCalculation'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="retirementPartCost32" visible="false"></Text>
+									<!--SavingEqual-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionRetirementSavingEqual'},{path:'view>/totalCalculation'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="retirementPartCost33" visible="false"></Text>
+									<Text text="{parts:[{path:'i18n>dataSolutionTotalIcomeRetirement'},{path:'view>/perOfTotalIncom'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="totalIncomEnteredRetirement" visible="false"></Text>
+									<!--<Text text="{parts:[{path:'i18n>dataSolutionLetUsShowRetirement'}], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph "-->
+									<!--	visible="true"></Text>-->
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<Text text="{genData>/GenderOdata/personName}’S FARM" class="textRotateRetirement" id="idTextRotateRetirementEn"></Text>
+									<Text text="{genData>/GenderOdata/personName}’S FARM" class="textRotateRetirementVi" id="idTextRotateRetirementVi"></Text>
+									<Text text="Phieng Luong , Moc Chau" class="textRotateRetirement2"></Text>
+									<Text text="Son La" class="textRotateRetirement3"></Text>
+								</html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<!--Travel With Partner-->
+		<App backgroundImage="{dataModel>/images/49}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar4"/>
+						<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>-->
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-10 col-lg-10 col-xs-12 col-sm-12">
+									<Text text="{i18n>lblSolutionRetirementTitle}" class="solutionRetireTitle blueColor"></Text>
+								</html:div>
+								<html:div class="col-md-2 col-lg-2 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<!--Single-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilySingle'}, {path:'view>/number'},{path:'view>/personAge'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="retirementPart21" visible="false"></Text>
+									<!--Married-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilyMarried'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="retirementPart22" visible="false"></Text>
+									<!--MarriedWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilyMarriedWithKids'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'},{path:'view>/totalChildren'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="retirementPart23" visible="false"></Text>
+									<!--SingleWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilySingleWithKids'},{path:'view>/number'},{path:'view>/personAge'},{path:'view>/totalChildren'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="retirementPart24" visible="false"></Text>
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionRetirementPart2'},{path:'view>/retireAgeInYear'},{path:'view>/stringAfterLiveRetirement'},{path:'view>/stringWantToDoWhenRetire'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph "></Text>
+									<!--SavingGreater-->
+									<Text text="{parts:[{path:'i18n>dataSolutionRetirementSavingGreater'} ], formatter: 'jQuery.sap.formatMessage'}" class="solutionBodyPart "
+										id="retirementPartCost41" visible="false"></Text>
+									<!--SavingLess-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionRetirementSavingLesser'},{path:'view>/totalCalculation'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="retirementPartCost42" visible="false"></Text>
+									<!--SavingEqual-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionRetirementSavingEqual'},{path:'view>/totalCalculation'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="retirementPartCost43" visible="false"></Text>
+									<Text text="{parts:[{path:'i18n>dataSolutionTotalIcomeRetirement'},{path:'view>/perOfTotalIncom'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="totalIncomEnteredRetirement2" visible="false"></Text>
+									<!--<Text text="{parts:[{path:'i18n>dataSolutionLetUsShowRetirement'}], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph "-->
+									<!--	visible="true"></Text>-->
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<!--Run A small Buisness-->
+		<App backgroundImage="{dataModel>/images/50}" id="idRetirementSolution">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar4"/>
+						<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>-->
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-10 col-lg-10 col-xs-12 col-sm-12">
+									<Text text="{i18n>lblSolutionRetirementTitle}" class="solutionRetireTitle blueColor"></Text>
+								</html:div>
+								<html:div class="col-md-2 col-lg-2 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<!--Single-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilySingle'}, {path:'view>/number'},{path:'view>/personAge'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="retirementPart31" visible="false"></Text>
+									<!--Married-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilyMarried'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="retirementPart32" visible="false"></Text>
+									<!--MarriedWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilyMarriedWithKids'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'},{path:'view>/totalChildren'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="retirementPart33" visible="false"></Text>
+									<!--SingleWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilySingleWithKids'},{path:'view>/number'},{path:'view>/personAge'},{path:'view>/totalChildren'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="retirementPart34" visible="false"></Text>
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionRetirementPart2'},{path:'view>/retireAgeInYear'},{path:'view>/stringAfterLiveRetirement'},{path:'view>/stringWantToDoWhenRetire'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph "></Text>
+									<!--SavingGreater-->
+									<Text text="{parts:[{path:'i18n>dataSolutionRetirementSavingGreater'} ], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph "
+										id="retirementPartCost51" visible="false"></Text>
+									<!--SavingLess-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionRetirementSavingLesser'},{path:'view>/totalCalculation'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="retirementPartCost52" visible="false"></Text>
+									<!--SavingEqual-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionRetirementSavingEqual'},{path:'view>/totalCalculation'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="retirementPartCost53" visible="false"></Text>
+									<Text text="{parts:[{path:'i18n>dataSolutionTotalIcomeRetirement'},{path:'view>/perOfTotalIncom'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="totalIncomEnteredRetirement3" visible="false"></Text>
+									<!--<Text text="{parts:[{path:'i18n>dataSolutionLetUsShowRetirement'}], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph "-->
+									<!--	visible="true"></Text>-->
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<VBox class="solutionVBOXText" id="idsolutionVBOXTextEn">
+										<Text text="{genData>/GenderOdata/retirementGenderSelection} {genData>/GenderOdata/personName}'S" class="solutionPlateRetirementText1"></Text>
+										<Text text="RESTAURANT" class="solutionPlateRetirementText2"></Text>
+									</VBox>
+									<VBox class="solutionVBOXTextVi" id="idsolutionVBOXTextVi">
+										<Text text="{genData>/GenderOdata/retirementGenderSelection} {genData>/GenderOdata/personName}'S" class="solutionPlateRetirementText1"></Text>
+										<Text text="RESTAURANT" class="solutionPlateRetirementText2"></Text>
+									</VBox>
+								</html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<!--Social Activities-->
+		<App backgroundImage="{dataModel>/images/51}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar4"/>
+						<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>-->
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-10 col-lg-10 col-xs-12 col-sm-12">
+									<Text text="{i18n>lblSolutionRetirementTitle}" class="solutionRetireTitle blueColor"></Text>
+								</html:div>
+								<html:div class="col-md-2 col-lg-2 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<!--Single-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilySingle'}, {path:'view>/number'},{path:'view>/personAge'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="retirementPart41" visible="false"></Text>
+									<!--Married-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilyMarried'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="retirementPart42" visible="false"></Text>
+									<!--MarriedWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilyMarriedWithKids'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'},{path:'view>/totalChildren'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="retirementPart43" visible="false"></Text>
+									<!--SingleWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilySingleWithKids'},{path:'view>/number'},{path:'view>/personAge'},{path:'view>/totalChildren'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="retirementPart44" visible="false"></Text>
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionRetirementPart2'},{path:'view>/retireAgeInYear'},{path:'view>/stringAfterLiveRetirement'},{path:'view>/stringWantToDoWhenRetire'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph "></Text>
+									<!--SavingGreater-->
+									<Text text="{parts:[{path:'i18n>dataSolutionRetirementSavingGreater'} ], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph "
+										id="retirementPartCost61" visible="false"></Text>
+									<!--SavingLess-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionRetirementSavingLesser'},{path:'view>/totalCalculation'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="retirementPartCost62" visible="false"></Text>
+									<!--SavingEqual-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionRetirementSavingEqual'},{path:'view>/totalCalculation'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="retirementPartCost63" visible="false"></Text>
+									<Text text="{parts:[{path:'i18n>dataSolutionTotalIcomeRetirement'},{path:'view>/perOfTotalIncom'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="totalIncomEnteredRetirement4" visible="false"></Text>
+									<!--<Text text="{parts:[{path:'i18n>dataSolutionLetUsShowRetirement'}], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph "-->
+									<!--	visible="true"></Text>-->
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<!--Famlily 9-->
+		<App backgroundImage="{dataModel>/images/52}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar4"/>
+						<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>-->
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-10 col-lg-10 col-xs-12 col-sm-12">
+									<Text text="{i18n>lblSoultionEdu1}" class="solutionMainTitle blueColor"></Text>
+								</html:div>
+								<html:div class="col-md-2 col-lg-2 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<!--Single-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilySingle'}, {path:'view>/number'},{path:'view>/personAge'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="family1" visible="false"></Text>
+									<!--Married-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilyMarried'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="family2" visible="false"></Text>
+									<!--MarriedWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilyMarriedWithKids'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'},{path:'view>/totalChildren'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="family3" visible="false"></Text>
+									<!--SingleWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilySingleWithKids'},{path:'view>/number'},{path:'view>/personAge'},{path:'view>/totalChildren'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="family4" visible="false"></Text>
+									<!--SavingGreater-->
+									<Text text="{parts:[{path:'i18n>dataSolutionSavgingGreater'},{path:'view>/assumeYear'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="familyPart21" visible="false"></Text>
+									<!--SavingLess-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionSavgingLesser'},{path:'view>/totalCalculation'},{path:'view>/assumeYear'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="familyPart22" visible="false"></Text>
+									<!--SavingEqual-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionSavgingEqual'},{path:'view>/totalCalculation'},{path:'view>/assumeYear'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="familyPart23" visible="false"></Text>
+									<Text text="{parts:[{path:'i18n>dataSolutionTotalIncome'},{path:'view>/perOfTotalIncom'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="totalIncomEntered" visible="false"></Text>
+									<!--<Text text="{parts:[{path:'i18n>dataSolutionLetUsShow'}], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph " visible="true"></Text>-->
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<!--Health 10-->
+		<App backgroundImage="{dataModel>/images/53}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar4"/>
+						<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>-->
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-10 col-lg-10 col-xs-12 col-sm-12">
+									<Text text="{i18n>lblSoultionEdu1}" class="solutionMainTitle blueColor"></Text>
+								</html:div>
+								<html:div class="col-md-2 col-lg-2 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<!--Single-->
+									<!--<Text text="{path:'i18n>lblTellAboutYou' , formatter: '.formatter.currencyFormatter'}"/> -->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilySingle'}, {path:'view>/number'},{path:'view>/personAge'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="health1" visible="false"></Text>
+									<!--Married-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilyMarried'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="health2" visible="false"></Text>
+									<!--MarriedWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilyMarriedWithKids'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'},{path:'view>/totalChildren'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="health3" visible="false"></Text>
+									<!--SingleWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionFamilySingleWithKids'},{path:'view>/number'},{path:'view>/personAge'},{path:'view>/totalChildren'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="health4" visible="false"></Text>
+									<!--SavingGreateForCritical-->
+									<Text text="{parts:[{path:'i18n>solutionForHealthCriticalGreater'} ], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph "
+										id="idHealth1" visible="false"></Text>
+									<!--SavingLesserForCritical-->
+									<Text
+										text="{parts:[{path:'i18n>solutionForHealthCriticalLesser'},{path:'view>/savedMoneyHealth'},{path:'view>/policyCoverSolution'},{path:'view>/totalCalculation'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="idHealth2" visible="false"></Text>
+									<!--SavingEqualForCritical-->
+									<Text
+										text="{parts:[{path:'i18n>solutionForHealthCriticalEqual'},{path:'view>/policyCoverSolution'},{path:'view>/totalCalculation'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="idHealth3" visible="false"></Text>
+									<!--SavingAccidentHealthCareForGreaterLesser-->
+									<Text
+										text="{parts:[{path:'i18n>solutionForHealthAccidentlGreaterLesser'},{path:'view>/savedMoneyHealth'},{path:'view>/healthMonth'},{path:'view>/policyCoverSolution'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="idHealth4" visible="false"></Text>
+									<!--solutionForHealthAccidentlEqual-->
+									<Text
+										text="{parts:[{path:'i18n>solutionForHealthAccidentlEqual'},{path:'view>/policyCoverSolution'},{path:'view>/accidentHelathCareZeoSavinging'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="idHealth5" visible="false"></Text>
+									<!--TotalINcomeHealth-->
+									<Text text="{parts:[{path:'i18n>solutionForHealthTotalIncome'},{path:'view>/perOfTotalIncom'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="idHealth7" visible="false"></Text>
+									<!--solutionForHealthLetUsShowMbal-->
+									<!--<Text text="{parts:[{path:'i18n>solutionForHealthLetShowMbal'} ], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph "-->
+									<!--	id="idHealth6" visible="true"></Text>-->
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<!--Dream 11-->
+		<!--Apartment-->
+		<App backgroundImage="{dataModel>/images/dream54}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>-->
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar4"/>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-10 col-lg-10 col-xs-12 col-sm-12">
+									<Text text="{i18n>lblSoultionEdu1}" class="solutionMainTitle blueColor"></Text>
+								</html:div>
+								<html:div class="col-md-2 col-lg-2 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamSingle'}, {path:'view>/number'},{path:'view>/personAge'},{path:'view>/livingArr'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="dream1" visible="false"></Text>
+									<!--Married-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamMarried'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'},{path:'view>/livingArr'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="dream2" visible="false"></Text>
+									<!--MarriedWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamMarriedWithKids'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'},{path:'view>/livingArr'},{path:'view>/totalChildren'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="dream3" visible="false"></Text>
+									<!--SingleWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamSingleWithKids'},{path:'view>/number'},{path:'view>/personAge'},{path:'view>/livingArr'},{path:'view>/totalChildren'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="dream4" visible="false"></Text>
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamPart2'},{path:'view>/futureDreamString'},{path:'view>/dreamYear'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " visible="true"></Text>
+									<!--SavingGreater-->
+									<Text text="{parts:[{path:'i18n>dataSolutionDreamSavingGreater'} ], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph "
+										id="dreamPart31" visible="false"></Text>
+									<!--SavingLess-->
+									<Text text="{parts:[{path:'i18n>dataSolutionDreamSavingLesser'},{path:'view>/totalCalculation'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="dreamPart32" visible="false"></Text>
+									<!--SavingEqual-->
+									<Text text="{parts:[{path:'i18n>dataSolutionDreamSavingEqual'},{path:'view>/totalCalculation'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="dreamPart33" visible="false"></Text>
+									<Text text="{parts:[{path:'i18n>dataSolutionDreamTotaIncome'},{path:'view>/perOfTotalIncom'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="totalIncomEnteredDream" visible="false"></Text>
+									<!--<Text text="{parts:[{path:'i18n>dataSolutionLetUsShow'}], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph " visible="true"></Text>-->
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<VBox class="solutionKeyVboxForApartment" id="idSolutionVBoxApartmentEn">
+										<Text text="{genData>/GenderOdata/genderSelection}" class="solutionKeyRetirmentText1 blueColor"></Text>
+										<Text text="{genData>/GenderOdata/personName}" class="solutionKeyRetirmentText2 blueColor"></Text>
+									</VBox>
+									<VBox class="solutionKeyVboxForApartmentVn" id="idSolutionVBoxApartmentVn">
+										<Text text="{genData>/GenderOdata/genderSelection}" class="solutionKeyRetirmentText1 blueColor"></Text>
+										<Text text="{genData>/GenderOdata/personName}" class="solutionKeyRetirmentText2 blueColor"></Text>
+									</VBox>
+								</html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<!--Nice Car-->
+		<App backgroundImage="{dataModel>/images/dream55}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar4"/>
+						<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>-->
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<Text text="{i18n>lblSoultionEdu1}" class="solutionMainTitle blueColor"></Text>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamSingle'}, {path:'view>/number'},{path:'view>/personAge'},{path:'view>/livingArr'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="dream21" visible="false"></Text>
+									<!--Married-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamMarried'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'},{path:'view>/livingArr'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="dream22" visible="false"></Text>
+									<!--MarriedWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamMarriedWithKids'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'},{path:'view>/livingArr'},{path:'view>/totalChildren'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="dream23" visible="false"></Text>
+									<!--SingleWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamSingleWithKids'},{path:'view>/number'},{path:'view>/personAge'},{path:'view>/livingArr'},{path:'view>/totalChildren'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="dream24" visible="false"></Text>
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamPart2'},{path:'view>/futureDreamString'},{path:'view>/dreamYear'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " visible="true"></Text>
+									<!--SavingGreater-->
+									<Text text="{parts:[{path:'i18n>dataSolutionDreamSavingGreater'} ], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph "
+										id="dreamPart41" visible="false"></Text>
+									<!--SavingLess-->
+									<Text text="{parts:[{path:'i18n>dataSolutionDreamSavingLesser'},{path:'view>/totalCalculation'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="dreamPart42" visible="false"></Text>
+									<!--SavingEqual-->
+									<Text text="{parts:[{path:'i18n>dataSolutionDreamSavingEqual'},{path:'view>/totalCalculation'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="dreamPart43" visible="false"></Text>
+									<Text text="{parts:[{path:'i18n>dataSolutionDreamTotaIncome'},{path:'view>/perOfTotalIncom'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="totalIncomEnteredDream1" visible="false"></Text>
+									<!--<Text text="{parts:[{path:'i18n>dataSolutionLetUsShow'}], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph " visible="true"></Text>-->
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<VBox class="solutionKeyVbox" id="idSolutionKeyVboxEn">
+										<Text text="{genData>/GenderOdata/genderSelection}{genData>/GenderOdata/personName}" class="solutionCar "></Text>
+										<Text text="30A.666 88" class="solutionCarText2 "></Text>
+									</VBox>
+									<VBox class="solutionKeyVboxVi" id="idSolutionKeyVboxVi">
+										<Text text="{genData>/GenderOdata/genderSelection}{genData>/GenderOdata/personName}" class="solutionCar "></Text>
+										<Text text="30A.666 88" class="solutionCarText2 "></Text>
+									</VBox>
+								</html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<!--Explore World-->
+		<App backgroundImage="{dataModel>/images/dream56}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar4"/>
+						<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>-->
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<!--<html:div class="col-md-1 col-lg-1 col-sm-12 col-xs-3"></html:div>-->
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<Text text="{i18n>lblSoultionEdu1}" class="solutionMainTitle blueColor"></Text>
+									<!--<html:h1 style="color:#003770;" class="solutiontitle1 ">LET US SHOW HOW MBAL CAN HELP</html:h1>-->
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamSingle'}, {path:'view>/number'},{path:'view>/personAge'},{path:'view>/livingArr'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="dream31" visible="false"></Text>
+									<!--Married-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamMarried'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'},{path:'view>/livingArr'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="dream32" visible="false"></Text>
+									<!--MarriedWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamMarriedWithKids'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'},{path:'view>/livingArr'},{path:'view>/totalChildren'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="dream33" visible="false"></Text>
+									<!--SingleWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamSingleWithKids'},{path:'view>/number'},{path:'view>/personAge'},{path:'view>/livingArr'},{path:'view>/totalChildren'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="dream34" visible="false"></Text>
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamPart2'},{path:'view>/futureDreamString'},{path:'view>/dreamYear'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " visible="true"></Text>
+									<!--SavingGreater-->
+									<Text text="{parts:[{path:'i18n>dataSolutionDreamSavingGreater'} ], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph "
+										id="dreamPart51" visible="false"></Text>
+									<!--SavingLess-->
+									<Text text="{parts:[{path:'i18n>dataSolutionDreamSavingLesser'},{path:'view>/totalCalculation'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="dreamPart52" visible="false"></Text>
+									<!--SavingEqual-->
+									<Text text="{parts:[{path:'i18n>dataSolutionDreamSavingEqual'},{path:'view>/totalCalculation'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="dreamPart53" visible="false"></Text>
+									<Text text="{parts:[{path:'i18n>dataSolutionDreamTotaIncome'},{path:'view>/perOfTotalIncom'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="totalIncomEnteredDream2" visible="false"></Text>
+									<!--<Text text="{parts:[{path:'i18n>dataSolutionLetUsShow'}], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph " visible="true"></Text>-->
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<HBox class="solutionHBOxRetirmentFlight" id="idsolutionHBOxRetirmentFlightEn">
+										<Text text="{genData>/GenderOdata/genderSelection} {genData>/GenderOdata/personName}" class="solutionRetirementFlightText1"></Text>
+										<Text text="{genData>/GenderOdata/partnerGender} {genData>/GenderOdata/partnerName} " class="solutionRetirementFlightText2"></Text>
+									</HBox>
+									<HBox class="solutionHBOxRetirmentFlightVi" id="idsolutionHBOxRetirmentFlightVi">
+										<Text text="{genData>/GenderOdata/genderSelection} {genData>/GenderOdata/personName}" class="solutionRetirementFlightText1"></Text>
+										<Text text="{genData>/GenderOdata/partnerGender} {genData>/GenderOdata/partnerName} " class="solutionRetirementFlightText2"></Text>
+									</HBox>
+								</html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<!--Buisness Person-->
+		<App backgroundImage="{dataModel>/images/dream57}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar4"/>
+						<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>-->
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<Text text="{i18n>lblSoultionEdu1}" class="solutionMainTitle blueColor"></Text>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+						<html:div >
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamSingle'}, {path:'view>/number'},{path:'view>/personAge'},{path:'view>/livingArr'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="dream41" visible="false"></Text>
+									<!--Married-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamMarried'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'},{path:'view>/livingArr'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="dream42" visible="false"></Text>
+									<!--MarriedWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamMarriedWithKids'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'},{path:'view>/livingArr'},{path:'view>/totalChildren'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="dream43" visible="false"></Text>
+									<!--SingleWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamSingleWithKids'},{path:'view>/number'},{path:'view>/personAge'},{path:'view>/livingArr'},{path:'view>/totalChildren'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="dream44" visible="false"></Text>
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamPart2'},{path:'view>/futureDreamString'},{path:'view>/dreamYear'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " visible="true"></Text>
+									<!--SavingGreater-->
+									<Text text="{parts:[{path:'i18n>dataSolutionDreamSavingGreater'} ], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph "
+										id="dreamPart61" visible="false"></Text>
+									<!--SavingLess-->
+									<Text text="{parts:[{path:'i18n>dataSolutionDreamSavingLesser'},{path:'view>/totalCalculation'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="dreamPart62" visible="false"></Text>
+									<!--SavingEqual-->
+									<Text text="{parts:[{path:'i18n>dataSolutionDreamSavingEqual'},{path:'view>/totalCalculation'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="dreamPart63" visible="false"></Text>
+									<Text text="{parts:[{path:'i18n>dataSolutionDreamTotaIncome'},{path:'view>/perOfTotalIncom'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="totalIncomEnteredDream3" visible="false"></Text>
+									<!--<Text text="{parts:[{path:'i18n>dataSolutionLetUsShow'}], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph " visible="true"></Text>-->
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<!--Successful Children-->
+		<App backgroundImage="{dataModel>/images/dream58}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar4"/>
+						<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>-->
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<Text text="{i18n>lblSoultionEdu1}" class="solutionMainTitle blueColor"></Text>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamSingle'}, {path:'view>/number'},{path:'view>/personAge'},{path:'view>/livingArr'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="dream51" visible="false"></Text>
+									<!--Married-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamMarried'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'},{path:'view>/livingArr'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="dream52" visible="false"></Text>
+									<!--MarriedWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamMarriedWithKids'}, {path:'view>/number'},{path:'view>/partner'},{path:'view>/personAge'},{path:'view>/partnerAge'},{path:'view>/livingArr'},{path:'view>/totalChildren'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="dream53" visible="false"></Text>
+									<!--SingleWithKids-->
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamSingleWithKids'},{path:'view>/number'},{path:'view>/personAge'},{path:'view>/livingArr'},{path:'view>/totalChildren'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutionBodyPart " id="dream54" visible="false"></Text>
+									<Text
+										text="{parts:[{path:'i18n>dataSolutionDreamPart2'},{path:'view>/futureDreamString'},{path:'view>/dreamYear'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " visible="true"></Text>
+									<!--SavingGreater-->
+									<Text text="{parts:[{path:'i18n>dataSolutionDreamSavingGreater'} ], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph "
+										id="dreamPart71" visible="false"></Text>
+									<!--SavingLess-->
+									<Text text="{parts:[{path:'i18n>dataSolutionDreamSavingLesser'},{path:'view>/totalCalculation'}], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="dreamPart72" visible="false"></Text>
+									<!--SavingEqual-->
+									<Text text="{parts:[{path:'i18n>dataSolutionDreamSavingEqual'},{path:'view>/totalCalculation'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="dreamPart73" visible="false"></Text>
+									<Text text="{parts:[{path:'i18n>dataSolutionDreamTotaIncome'},{path:'view>/perOfTotalIncom'} ], formatter: 'jQuery.sap.formatMessage'}"
+										class="solutioParagraph " id="totalIncomEnteredDream4" visible="false"></Text>
+									<!--<Text text="{parts:[{path:'i18n>dataSolutionLetUsShow'}], formatter: 'jQuery.sap.formatMessage'}" class="solutioParagraph " visible="true"></Text>-->
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+	</NavContainer>
+</mvc:View>

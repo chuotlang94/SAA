@@ -1,0 +1,63 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.saaprojSAADevlopment.controller.ContactUs"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App backgroundImage="{dataModel>/images/61}">
+		<pages>
+			<Page showHeader="false">
+				<content>
+					<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar7"/>
+					<VBox>
+					<Text text="{i18n>lblContactUs}" class="solutiontitle1 blueColor"></Text>
+					<Image src="{dataModel>/images/contactStatusLogo}" class="logoContactUs"></Image>
+					</VBox>
+					<VBox>
+						<html:div class="row" style="margin: -192px 0px 0px 0px;">
+							<html:div class="col-md-6 col-lg-6">
+								<HBox class="HBOxContact">
+									<Image src="{dataModel>/images/location}" width="44px"></Image>
+									<Text text="{i18n>lblAddress}" class="textContactBody blueColor"></Text>
+								</HBox>
+							</html:div>
+							<html:div class="col-md-6 col-lg-6"></html:div>
+						</html:div>
+							<html:div class="row">
+							<html:div class="col-md-6 col-lg-6">
+								<HBox class="HBOxContact2">
+									<Image src="{dataModel>/images/phone}" width="44px"></Image>
+									<Text text="+84 4 2229 6666" class="textContactBody2 blueColor"></Text>
+								</HBox>
+							</html:div>
+							<html:div class="col-md-6 col-lg-6"></html:div>
+						</html:div>
+							<html:div class="row">
+							<html:div class="col-md-6 col-lg-6">
+								<HBox class="HBOxContact2">
+									<Image src="{dataModel>/images/fax}" width="49px"></Image>
+									<Text text="+84 4 6269 8080" class="textContactBody2 blueColor"></Text>
+								</HBox>
+							</html:div>
+							<html:div class="col-md-6 col-lg-6"></html:div>
+						</html:div>
+							<html:div class="row">
+							<html:div class="col-md-6 col-lg-6">
+								<HBox class="HBOxContact2">
+									<Image src="{dataModel>/images/home}" width="49px"></Image>
+									<Text text="mbageas.life" class="textContactBody2 blueColor"></Text>
+								</HBox>
+							</html:div>
+							<html:div class="col-md-6 col-lg-6"></html:div>
+						</html:div>
+							<html:div class="row">
+							<html:div class="col-md-6 col-lg-6">
+								<HBox class="HBOxContact2">
+									<Image src="{dataModel>/images/mail}" width="49px"></Image>
+									<Text text="dvkh@mbageas.life" class="textContactBody2 blueColor"></Text>
+								</HBox>
+							</html:div>
+							<html:div class="col-md-6 col-lg-6"></html:div>
+						</html:div>
+					</VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

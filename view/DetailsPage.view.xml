@@ -1,0 +1,1275 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="com.saaprojSAADevlopment.controller.DetailsPage" xmlns:html="http://www.w3.org/1999/xhtml" id="idDetailPage">
+	<NavContainer id="navCon10" width="100%" height="100%" class="navContainerControl sapUiSmallMarginBottom" afterNavigate="navContainerOnNavigate" navigate="hello">
+		<!--Health 0-->
+		<App backgroundImage="{dataModel>/images/24}" id="idHealth0">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar6"/>
+						<Text text="{i18n>healthTitle}" class="TitleHealth2 whiteColor" id="idTitleHealth2En" visible="false"></Text>
+						<Text text="{i18n>healthTitle}" class="TitleHealth2Vi whiteColor" id="idTitleHealth2Vi" visible="false"></Text>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets1 carousel-indicators1">
+							<html:li class="active" data-target="#carousel-example1" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="6"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/25}" id="idHealth1"  class="HealthBack2Clas">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar6"/>
+					</content>
+					<html:footer class="footerHealth">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect heath2BackButton"/>
+						<html:ol class="bullets1 carousel-indicators1">
+							<html:li class="" data-target="#carousel-example1" data-slide-to="1"></html:li>
+							<html:li class="active" data-target="#carousel-example1" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="6"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/26}" id="idHealth2">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar6"/>
+						<HBox id="idHealthWorriesEn">
+							<Text text="{i18n>lblHealthWorries}" class="solutiontitle1 blueColor"></Text>
+						</HBox>
+						<HBox id="idHealthWorriesVi">
+							<html:div class="row">
+								<html:div class="col-md-8 col-lg-8">
+									<Text text="{i18n>lblHealthWorries}" class="solutiontitle1 blueColor"></Text>
+								</html:div>
+							</html:div>
+						</HBox>
+						<HBox class="iconHboxHealth">
+							<Image src="{dataModel>/images/criticalllness}" class="HealthIconParent iconBigWidth" press="onWorriesHealth" alt="1" id="idCriticalIllness"></Image>
+							<Image src="{dataModel>/images/AnAccident}" class="HealthIconParent iconBigWidth iconHBoxHealthImage2" press="onWorriesHealth" alt="2"
+								id="idAnAccdent"></Image>
+							<Image src="{dataModel>/images/qualityHealthcare}" class=" HealthIconParent iconBigWidth iconHBoxHealthImage2" press="onWorriesHealth"
+								alt="3" id="idPoorQualityHelthcare"></Image>
+						</HBox>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets1 carousel-indicators1">
+							<html:li class="" data-target="#carousel-example1" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="2"></html:li>
+							<html:li class="active" data-target="#carousel-example1" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="6"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect "/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/27}" id="idHealth3">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar6"/>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_row_header">
+								<html:div class="col-md-8 col-lg-8 col-xs-12 col-sm-12">
+									<!--<html:h1 style="color:#003770" class="icon_row_header_textp4 h10h1">WHO DO YOU WANT TO BE COVERED BY POLICY ?</html:h1>-->
+									<Text text="{i18n>lblHealthPolicyCovered}" class=" HealthSubPage4 blueColor"></Text>
+								</html:div>
+								<html:div class="col-md-4 col-lg-4 col-xs-3 col-sm-1"></html:div>
+							</html:div>
+						</html:div>
+						<html:div class="row">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowp4" style="margin-left:-10px; margin-top: 19px;">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 ">
+										<Image src="{dataModel>/images/myParent}" class="iconBigWidth" press="onHealthCoveredPolicy" alt="1" id="idMyParent"></Image>
+									</html:div>
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 ">
+										<Image src="{dataModel>/images/mySelf}" class="iconBigWidth" press="onHealthCoveredPolicy" alt="4" id="idMySelf"></Image>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-5 col-lg-5 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+						<html:div class="row">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowp4" style="margin-left:-10px; margin-top: 29px;">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 ">
+										<Image src="{dataModel>/images/myPartner}" press="onHealthCoveredPolicy" class="iconBigWidth" alt="3" id="idMyPartner"></Image>
+									</html:div>
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 ">
+										<Image src="{dataModel>/images/myChildren}" press="onHealthCoveredPolicy" class="iconBigWidth" alt="2" id="idMyChildren"></Image>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-5 col-lg-5 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets1 carousel-indicators1">
+							<html:li class="" data-target="#carousel-example1" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="3"></html:li>
+							<html:li class="active" data-target="#carousel-example1" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="6"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect "/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/28}" id="idHealth4">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar6"/>
+						<HBox id="idHealthCareFamilyAmountEn">
+							<html:div>
+								<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 custMarg">
+									<!--<html:div class="col-md-1 col-lg-1 col-sm-1 col-xs-3"></html:div>-->
+									<html:div class="col-md-7 col-lg-7 col-xs-12 col-sm-12" style=" margin: 9px 0px 0px 72px;">
+										<!--<html:h1 style="color:#003770" class="h1Health">HOW MUCH MONEY HAVE YOU SET ASIDE FOR HEALTHCARE ?</html:h1>-->
+										<Text text="{i18n>lblHealthMoneyHealthCare}" class="h1Health blueColor"></Text>
+									</html:div>
+									<html:div class="col-md-5 col-lg-5 col-xs-3 col-sm-1"></html:div>
+								</html:div>
+							</html:div>
+						</HBox>
+						<HBox id="idHealthCareFamilyAmountVi">
+							<html:div>
+								<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 custMarg">
+									<!--<html:div class="col-md-1 col-lg-1 col-sm-1 col-xs-3"></html:div>-->
+									<html:div class="col-md-9 col-lg-9 col-xs-12 col-sm-12" style=" margin: 9px 0px 0px 72px;">
+										<!--<html:h1 style="color:#003770" class="h1Health">HOW MUCH MONEY HAVE YOU SET ASIDE FOR HEALTHCARE ?</html:h1>-->
+										<Text text="{i18n>lblHealthMoneyHealthCare}" class="h1Health blueColor"></Text>
+									</html:div>
+									<html:div class="col-md-3 col-lg-3 col-xs-3 col-sm-1"></html:div>
+								</html:div>
+							</html:div>
+						</HBox>
+						<html:div class="row ">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowp4 custROW ">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<HBox >
+											<Input
+												value="{path:'FData>/GloBalJson/familyMonthlySaved', type: 'sap.ui.model.type.Currency',formatOptions: { decimals:0, showMeasure: false}}"
+												class="inputfamily sapUiLargeMarginBegin inpuHegut blueColor" liveChange="numberInputOnly"></Input><Input editable="false" value="VND" class="txtvndfamily txtHeight blueColor"/></HBox>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets1 carousel-indicators1">
+							<html:li class="" data-target="#carousel-example1" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="4"></html:li>
+							<html:li class="active" data-target="#carousel-example1" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="6"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect "/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/29}" id="idHealth5">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar6"/>
+						<HBox id="idHealthAmountEn">
+							<html:div class="row">
+								<html:div class="col-md-11 col-lg-11 col-sm-1 col-xs-3">
+									<Text text="{i18n>lblHealthFamilyIncome}" class="solutiontitle1 blueColor"></Text>
+								</html:div>
+							</html:div>
+						</HBox>
+						<HBox id="idHealthAmountVi">
+							<html:div class="row">
+								<html:div class="col-md-11 col-lg-11 col-sm-1 col-xs-3">
+									<Text text="{i18n>lblHealthFamilyIncome}" class="solutiontitle1 blueColor"></Text>
+								</html:div>
+							</html:div>
+						</HBox>
+						<html:div class="row ">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowp4 custROW ">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<HBox >
+											<Input value="{path:'FData>/GloBalJson/totalIncome', type: 'sap.ui.model.type.Currency',formatOptions: { decimals:0, showMeasure: false}}"
+												class="inputfamily sapUiLargeMarginBegin inpuHegut blueColor" liveChange="numberInputOnly"></Input><Input editable="false" value="VND" class="txtvndfamily txtHeight blueColor"/></HBox>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets1 carousel-indicators1">
+							<html:li class="" data-target="#carousel-example1" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="5"></html:li>
+							<html:li class="active" data-target="#carousel-example1" data-slide-to="6"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<!--Children Education  6 -->
+		<App backgroundImage="{dataModel>/images/11}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar6"/>
+						<Text text="{i18n>educationTitle}" class="childrenTitle"></Text>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets1 carousel-indicators1">
+							<html:li class="active" data-target="#carousel-example1" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="6"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="7"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/12}" id="idChildrenBack2">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar6"/>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets1 carousel-indicators1">
+							<html:li class="" data-target="#carousel-example1" data-slide-to="1"></html:li>
+							<html:li class="active" data-target="#carousel-example1" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="6"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="7"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/13}" id="childrenDomain">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar6"/>
+						<Text text="{i18n>lblEldestChildren}" class="solutiontitle1 blueColor "></Text>
+						<html:div class="row h-100 dynamicRow">
+							<HBox class="HBoxLeft" id="idHBoxChildrenAdded"></HBox>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets1 carousel-indicators1">
+							<html:li class="" data-target="#carousel-example1" data-slide-to="1"></html:li>
+							<html:li class="active" data-target="#carousel-example1" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="6"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="7"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/14}" id="idEducationCityDomain">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar6"/>
+						<HBox id="idChildrenCrrerEn">
+							<Text text="{i18n>lblCarrierParsue}" class="solutiontitle1 skyColor "></Text>
+						</HBox>
+						<HBox id="idChildrenCrrerVi">
+							<html:div class="row">
+								<html:div class="col-md-11 col-lg-11">
+									<Text text="{i18n>lblCarrierParsue}" class="solutiontitle1 skyColor "></Text>
+								</html:div>
+							</html:div>
+						</HBox>
+						<HBox class="icon6HBOX">
+							<Image src="{dataModel>/images/Doctor}" class="iconBigWidth" press="onChildeCareerPursue" alt="1" id="idDoctor"></Image>
+							<Image src="{dataModel>/images/Lawyer}" class="iconBigWidth iconChildRow1Image2" press="onChildeCareerPursue" alt="2" id="idLawyer"></Image>
+							<Image src="{dataModel>/images/Teacher}" class="iconBigWidth iconChildRow1Image3" press="onChildeCareerPursue" alt="3" id="idTeacher"></Image>
+							<Image src="{dataModel>/images/Artist}" class="iconBigWidth iconChildRow1Image2" press="onChildeCareerPursue" alt="4" id="idArtist"></Image>
+						</HBox>
+						<HBox class="icon6HobxRow2">
+							<Image src="{dataModel>/images/Government_Officer}" class="iconBigWidth iconChildRowImage1" press="onChildeCareerPursue" alt="5"
+								id="idGovernmentOffice"></Image>
+							<Image src="{dataModel>/images/Business_leader}" class="iconBigWidth iconChildRowImage2" press="onChildeCareerPursue" alt="6"
+								id="idBuisnessLeader"></Image>
+						</HBox>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets1 carousel-indicators1">
+							<html:li class="" data-target="#carousel-example1" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="3"></html:li>
+							<html:li class="active" data-target="#carousel-example1" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="6"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="7"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/map}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar6"/>
+						<Text text="{i18n>lblChildWantStudy}" class="solutiontitle1 blueColor "></Text>
+						<html:div class="row">
+							<Button text="{i18n>lblAmerica}" tooltip="1" press="educationCity" class="mapButtonCol butWidDreamPad mapButton mapAmericaBut "
+								id="idAMERICA"></Button>
+						</html:div>
+						<Button text="{i18n>lblEurope}" tooltip="2" press="educationCity" class="mapButtonCol butWidDreamPad mapButton mapEurop " id="idEUROPE"></Button>
+						<Button text="{i18n>lblVietnam}" tooltip="3" press="educationCity" class="mapButtonCol butWidDreamPad mapButton mapVeitnam" id="idVIETNAM"></Button>
+						<Button text="{i18n>lblAustralia}" tooltip="4" press="educationCity" class="mapButtonCol butWidDreamPad mapButton mapAustralia"
+							id="idAUSTRALIA"></Button>
+						<Button text="{i18n>lblAsia}" tooltip="5" press="educationCity" class="mapButtonCol butWidDreamPad mapButton mapAsia " id="idASIA"></Button>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets1 carousel-indicators1">
+							<html:li class="" data-target="#carousel-example1" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="4"></html:li>
+							<html:li class="active" data-target="#carousel-example1" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="6"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="7"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/15}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar6"/>
+						<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 custMarg">
+							<html:div class="col-md-1 col-lg-1 col-sm-1 col-xs-3"></html:div>
+							<html:div class="col-md-7 col-lg-7 col-xs-12 col-sm-12">
+								<Text text="{i18n>lblChildrenSaved}" class="h1Health blueColor"></Text>
+							</html:div>
+							<html:div class="col-md-4 col-lg-4 col-xs-3 col-sm-1"></html:div>
+						</html:div>
+						<html:div class="row ">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowp4 custROW ">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<HBox >
+											<Input
+												value="{path:'FData>/GloBalJson/familyMonthlySaved', type: 'sap.ui.model.type.Currency',formatOptions: { decimals:0, showMeasure: false}}"
+												class="inputfamily sapUiLargeMarginBegin inpuHegut blueColor" liveChange="numberInputOnly"></Input><Input editable="false" value="VND" class="txtvndfamily txtHeight blueColor"/></HBox>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets1 carousel-indicators1">
+							<html:li class="" data-target="#carousel-example1" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="5"></html:li>
+							<html:li class="active" data-target="#carousel-example1" data-slide-to="6"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="7"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/16}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar6"/>
+						<HBox id="idChildrenTotalEn">
+							<!--<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 custMarg">-->
+							<!--	<html:div class="col-md-1 col-lg-1 col-sm-1 col-xs-3"></html:div>-->
+							<!--	<html:div class="col-md-11 col-lg-11 col-xs-12 col-sm-12">-->
+							<!--		<Text text="{i18n>lblTotalIncomePerMonth}" class="h1Health blueColor"></Text>-->
+							<!--	</html:div>-->
+								
+								
+								
+							<!--</html:div>-->
+							
+							
+								<html:div class="row">
+								<html:div class="col-md-11 col-lg-11 col-sm-1 col-xs-3">
+									<Text text="{i18n>lblTotalIncomePerMonth}" class="solutiontitle1 blueColor"></Text>
+								</html:div>
+							</html:div>
+						</HBox>
+						<HBox id="idChildrenTotalVi">
+							<html:div class="col-md-11 col-lg-11">
+								<Text text="{i18n>lblTotalIncomePerMonth}" class="solutiontitle1 blueColor"></Text>
+							</html:div>
+						</HBox>
+						<html:div class="row ">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowp4 custROW ">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<HBox >
+											<Input value="{path:'FData>/GloBalJson/totalIncome', type: 'sap.ui.model.type.Currency',formatOptions: { decimals:0, showMeasure: false}}"
+												class="inputfamily sapUiLargeMarginBegin inpuHegut blueColor" liveChange="numberInputOnly"></Input><Input editable="false" value="VND" class="txtvndfamily txtHeight blueColor"/></HBox>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets1 carousel-indicators1">
+							<html:li class="" data-target="#carousel-example1" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example1" data-slide-to="6"></html:li>
+							<html:li class="active" data-target="#carousel-example1" data-slide-to="7"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<!--Family 13-->
+		<App backgroundImage="{dataModel>/images/17}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar2"/>
+						<Text text="{i18n>familyTitle}" class="familyTitle" id="idFamilyEn" visible="false"></Text>
+						<Text text="{i18n>familyTitle}" class="familyTitle1" id="idFamilyVi" visible="false"></Text>
+						<!--</html:div>-->
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="active" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="6"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/familyData}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar2"/>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="active" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="6"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/19}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar2"/>
+						<HBox id="idFamilyNeedSupportEn">
+							<html:div>
+								<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 rowMargTop1 mainTitleP3">
+									<html:div class="col-md-1 col-lg-1 col-sm-1 col-xs-3"></html:div>
+									<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+										<Text text="{i18n>lblFamilyLongSupport}" class="retireMentTitlep3"></Text>
+									</html:div>
+									<html:div class="col-md-5 col-lg-5 col-xs-3 col-sm-1"></html:div>
+								</html:div>
+							</html:div>
+						</HBox>
+						<HBox id="idFamilyNeedSupportVi">
+							<html:div class="row mainTitleP3">
+								<html:div class="col-md-12 col-lg-12">
+									<Text text="{i18n>lblFamilyLongSupport}" class="solutiontitle1 redColor"></Text>
+								</html:div>
+							</html:div>
+						</HBox>
+						<html:div class="row familyRow titlep3Row">
+							<html:div class="col-md-1 col-lg-1 col-sm-1 col-xs-3"></html:div>
+							<html:div class="col-md-10 col-lg-10 col-xs-12 col-sm-12">
+								<Button text="{i18n>but10Years}" id="idUnder10" class="butWidDreamCol butWidDreamPad butWidDream butWidDream1 " press="familySupportYear"
+									tooltip="1"></Button>
+								<Button text="{i18n>but1015Years}" id="idUnder1015" class="butWidDreamCol butWidDreamPad butWidDream butWidDream2 "
+									press="familySupportYear" tooltip="2"></Button>
+								<Button text="{i18n>but1520Years}" id="idUnder1520" class=" butWidDreamCol butWidDreamPad butWidDream butWidDream2 "
+									press="familySupportYear" tooltip="3"></Button>
+								<Button text="{i18n>but20Years}" id="idUnder20" class="butWidDreamCol butWidDreamPad butWidDream butWidDream2 " press="familySupportYear"
+									tooltip="4"></Button>
+								<html:div class="col-md-1 col-lg-1 col-xs-3 col-sm-1"></html:div>
+							</html:div>
+						</html:div>
+						<html:div class="row rowMargTop1 imagesFamilyP3Top">
+							<Image src="{dataModel>/images/101520}" width="63rem"></Image>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="active" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="6"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect "/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/20}" backgroundOpacity="0.7">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar2"/>
+						<HBox id="idFamilyMoneySupportEn">
+							<html:div>
+								<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 custMarg">
+									<html:div class="col-md-1 col-lg-1 col-sm-1 col-xs-3"></html:div>
+									<html:div class="col-md-9 col-lg-9 col-xs-12 col-sm-12">
+										<!--<html:h1 style="color:#003770" class="h1Health">HOW MUCH TOTAL INCOME OF YOUR FAMILY PER MONTH?</html:h1>-->
+										<Text text="{i18n>lblMoneySupportForFamily}" class="h1Health familyCureencyTit redColor"></Text>
+									</html:div>
+									<html:div class="col-md-2 col-lg-2 col-xs-3 col-sm-1"></html:div>
+								</html:div>
+							</html:div>
+						</HBox>
+						<HBox id="idFamilyMoneySupportVi">
+							<html:div class="row">
+								<html:div class="col-md-12 col-lg-12">
+									<Text text="{i18n>lblMoneySupportForFamily}" class="solutiontitle1 redColor"></Text>
+								</html:div>
+							</html:div>
+						</HBox>
+						<html:div class="row rowMargTop1 ">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowp4 rowTop rowMargTop1">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7 downMargin">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<HBox >
+											<Input
+												value="{path:'FData>/GloBalJson/familyNeedSuportCurrency', type: 'sap.ui.model.type.Currency',formatOptions: { decimals:0, showMeasure: false}}"
+												class="inputfamily sapUiLargeMarginBegin inpuHegut redColor" liveChange="numberInputOnly"></Input>
+											<!--<Input value="{path:'FData>/GloBalJson/familyMonthlySaved',type: 'sap.ui.model.type.Currency',	formatOptions: {minIntegerDigits: 3}}" class="inputfamily sapUiLargeMarginBegin inpuHegut redColor"/>-->
+											<Input editable="false" value="VND" class="txtvndfamily txtHeight redColor"/></HBox>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="active" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="6"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/21}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar2"/>
+						<HBox id="idFamilySavedForFamilyEn">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 custMarg">
+								<html:div class="col-md-1 col-lg-1 col-sm-1 col-xs-3"></html:div>
+								<html:div class="col-md-7 col-lg-7 col-xs-12 col-sm-12">
+									<!--<html:h1 style="color:black" class="h1Health ">HOW MUCH MONEY HAVE YOU SAVED YOUR FAMILY?</html:h1>-->
+									<Text text="{i18n>lblFamilyMoneySaved}" class="h1Health familyCureencyTit "></Text>
+								</html:div>
+								<html:div class="col-md-5 col-lg-5 col-xs-3 col-sm-1"></html:div>
+							</html:div>
+						</HBox>
+						<HBox id="idFamilySavedForFamilyVi">
+							<html:div class="row">
+								<html:div class="col-md-9 col-lg-9">
+									<Text text="{i18n>lblFamilyMoneySaved}" class="solutiontitle1 "></Text>
+								</html:div>
+							</html:div>
+						</HBox>
+						<html:div class="row ">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowp4 custROW ">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<HBox >
+											<Input
+												value="{path:'FData>/GloBalJson/familyMonthlySaved', type: 'sap.ui.model.type.Currency',formatOptions: { decimals:0, showMeasure: false}}"
+												class="inputfamily sapUiLargeMarginBegin inpuHegut redColor" liveChange="numberInputOnly"></Input><Input editable="false" value="VND" class="txtvndfamily txtHeight redColor"/></HBox>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="active" data-target="#carousel-example" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="6"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/23}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar2"/>
+						<HBox id="idFamilyTotalIncomeEn">
+							<!--<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 custMarg">-->
+							<!--	<html:div class="col-md-1 col-lg-1 col-sm-1 col-xs-3"></html:div>-->
+							<!--	<html:div class="col-md-10 col-lg-10 col-xs-12 col-sm-12">-->
+									<!--<html:h1 style="color:#e40473" class="h1Health ">HOW MUCH TOTAL INCOME OF YOUR FAMILY PER MONTH?</html:h1>-->
+							<!--		<Text text="{i18n>lblFamilyTotalIncome}" class="h1Health familyCureencyTit redColor "></Text>-->
+							<!--	</html:div>-->
+							<!--	<html:div class="col-md-1 col-lg-1 col-xs-3 col-sm-1"></html:div>-->
+							<!--</html:div>-->
+								<html:div class="row">
+								<html:div class="col-md-11 col-lg-11 col-sm-1 col-xs-3">
+									<Text text="{i18n>lblFamilyTotalIncome}" class="solutiontitle1 redColor "></Text>
+								</html:div>
+							</html:div>
+						</HBox>
+						<HBox id="idFamilyTotalIncomeVi">
+							<html:div class="row">
+								<html:div class="col-md-11 col-lg-11 col-sm-1 col-xs-3">
+									<Text text="{i18n>lblFamilyTotalIncome}" class="solutiontitle1 redColor"></Text>
+								</html:div>
+							</html:div>
+						</HBox>
+						<html:div class="row ">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowp4 custROW ">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<HBox >
+											<Input value="{path:'FData>/GloBalJson/totalIncome', type: 'sap.ui.model.type.Currency',formatOptions: { decimals:0, showMeasure: false}}"
+												class="inputfamily sapUiLargeMarginBegin inpuHegut redColor" liveChange="numberInputOnly"></Input><Input editable="false" value="VND" class="txtvndfamily txtHeight redColor"/></HBox>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="5"></html:li>
+							<html:li class="active" data-target="#carousel-example" data-slide-to="6"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<!--Dream   19-->
+		<App backgroundImage="{dataModel>/images/37}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar2"/>
+						<Text text="{i18n>dreamTitle}" class="dreamTitle" id="idDreamEn" visible="false"></Text>
+						<Text text="{i18n>dreamTitle}" class="dreamTitleVi" id="idDreamVi" visible="false"></Text>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="active" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="6"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/38}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar2"/>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_row_header">
+								<html:div class="col-md-4 col-lg-4 col-sm-4 col-xs-12"></html:div>
+								<html:div class="col-md-4 col-lg-4 col-xs-4 col-sm-12">
+									<!--<Text text="{i18n>dreamTitle}" class="dreamTitle"></Text>-->
+								</html:div>
+								<html:div class="col-md-4 col-lg-4 col-xs-4 col-sm-12"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="active" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="6"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/39}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar2"/>
+						<HBox id="idDreamForFutureEn">
+							<Text text="{i18n>lblDreamFuture}" class="solutiontitle1 redColor"></Text>
+						</HBox>
+						<HBox id="idDreamForFutureVi">
+							<html:div class="row">
+								<html:div class="col-md-11 col-lg-11">
+									<Text text="{i18n>lblDreamFuture}" class="solutiontitle1 redColor"></Text>
+								</html:div>
+							</html:div>
+						</HBox>
+						<HBox class="iconHBoxForDreams">
+							<Image src="{dataModel>/images/To_have_a_nice_car}" class="iconBigWidth" press="onDreamFuture" id="idNiceCar" alt="1"></Image>
+							<Image src="{dataModel>/images/To_raise_successful_children}" class="iconBigWidth iconHBoxForDreamsForImage2" id="idSuccessfulChildren"
+								press="onDreamFuture" alt="2"></Image>
+							<Image src="{dataModel>/images/Expore_the_world}" class="iconBigWidth iconHBoxForDreamsForImage2" id="idExploreWolrd" press="onDreamFuture"
+								alt="3"></Image>
+						</HBox>
+						<HBox class="icon2RowDreams">
+							<Image src="{dataModel>/images/Own_a_house}" class="iconBigWidth" press="onDreamFuture" alt="4" id="idOwnHouse"></Image >
+							<Image src="{dataModel>/images/Be_successful_business_person}" class="iconBigWidth iconHbOxRow2Image2" id="idSuccessfulBuisnessPerson"
+								press="onDreamFuture" alt="5"></Image>
+						</HBox>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="active" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="6"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/40}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar2"/>
+						<Text text="{i18n>lblDreamComeTrue}" class="solutiontitle1 redColor"></Text>
+						<!--</html:div>-->
+						<html:div class="row imgeLeft butooPad ">
+							<html:div class="col-md-1 col-lg-1 col-sm-1 col-xs-3"></html:div>
+							<html:div class="col-md-10 col-lg-10 col-xs-12 col-sm-12 ">
+								<Button text="{i18n>but10Years}" class="butWidDreamCol butWidDreamPad butWidDream butWidDream1 " press="onDreamComeTrue" tooltip="1"
+									id="idDreamComeTrue1"></Button>
+								<Button text="{i18n>but1015Years}" class="butWidDreamCol butWidDreamPad butWidDream butWidDream2 " press="onDreamComeTrue" tooltip="2"
+									id="idDreamComeTrue2"></Button>
+								<Button text="{i18n>but1520Years}" class=" butWidDreamCol butWidDreamPad butWidDream butWidDream2 " press="onDreamComeTrue" tooltip="3"
+									id="idDreamComeTrue3"></Button>
+								<Button text="{i18n>but20Years}" class="butWidDreamCol butWidDreamPad butWidDream butWidDream2 " press="onDreamComeTrue" tooltip="4"
+									id="idDreamComeTrue4"></Button>
+								<html:div class="col-md-1 col-lg-1 col-xs-3 col-sm-1"></html:div>
+							</html:div>
+						</html:div>
+						<html:div class="row rowMargTop">
+							<Image src="{dataModel>/images/101520}"></Image>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="active" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="6"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/41}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar2"/>
+						<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 custMarg">
+							<html:div class="col-md-1 col-lg-1 col-sm-1 col-xs-3"></html:div>
+							<html:div class="col-md-8 col-lg-8 col-xs-12 col-sm-12">
+								<Text text="{i18n>lblDreamSavedMoney}" class="h1Health redColor"></Text>
+							</html:div>
+							<html:div class="col-md-3 col-lg-3 col-xs-3 col-sm-1"></html:div>
+						</html:div>
+						<html:div class="row ">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowp4 custROW ">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<HBox >
+											<Input
+												value="{path:'FData>/GloBalJson/familyMonthlySaved', type: 'sap.ui.model.type.Currency',formatOptions: { decimals:0, showMeasure: false}}"
+												class="inputfamily sapUiLargeMarginBegin inpuHegut redColor" liveChange="numberInputOnly"></Input><Input editable="false" value="VND" class="txtvndfamily txtHeight redColor"/></HBox>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="active" data-target="#carousel-example" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="6"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/42}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar2"/>
+						<HBox id="idDreamAmountEn">
+							<html:div class="row">
+								<html:div class="col-md-11 col-lg-11 col-sm-1 col-xs-3">
+									<Text text="{i18n>lblDreamPerMonthMoneySaved}" class="solutiontitle1 "></Text>
+								</html:div>
+							</html:div>
+						</HBox>
+						<HBox id="idDreamAmountVi">
+							<html:div class="row">
+								<html:div class="col-md-11 col-lg-11 col-sm-1 col-xs-3">
+									<Text text="{i18n>lblDreamPerMonthMoneySaved}" class="solutiontitle1 "></Text>
+								</html:div>
+							</html:div>
+						</HBox>
+						<html:div class="row ">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowp4 custROW ">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<HBox >
+											<Input value="{path:'FData>/GloBalJson/totalIncome', type: 'sap.ui.model.type.Currency',formatOptions: { decimals:0, showMeasure: false}}"
+												class="inputfamily sapUiLargeMarginBegin inpuHegut redColor" liveChange="numberInputOnly"></Input><Input editable="false" value="VND" class="txtvndfamily txtHeight redColor"/></HBox>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="5"></html:li>
+							<html:li class="active" data-target="#carousel-example" data-slide-to="6"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<!--Retirement 25-->
+		<App backgroundImage="{dataModel>/images/30}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar2"/>
+						<Text text="{i18n>retirementTitle}" class="retirementTitle" visible="false" id="idRetirementEn"></Text>
+						<Text text="{i18n>retirementTitle}" class="retirementTitle1" visible="false" id="idRetirementVn"></Text>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="active" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="6"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="7"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/31}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar2"/>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="active" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="6"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="7"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/32}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar2"/>
+						<Text text="{i18n>lblRetirePlan}" class="solutiontitle1 redColor"></Text>
+						<HBox class="HboxLeft">
+							<Button text="{i18n>butRetiUnder55}" class="buttonCol buttonPad " press="onRetirementButton" tooltip="1" id="idUnder55Retirement"></Button>
+							<Button text="{i18n>butRetiUnder5560}" class="buttonCol buttonPad butMargRet " press="onRetirementButton" tooltip="2"
+								id="idUnder5060Retirement"></Button>
+							<Button text="{i18n>butRetiOver60}" class="buttonCol buttonPad butMargRet" press="onRetirementButton" tooltip="3" id="idOver60Retirement"></Button>
+						</HBox>
+						<Image src="{dataModel>/images/5560}" class="sliderImage"></Image>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="active" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="6"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="7"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/33}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar2"/>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_row_header">
+								<html:div class="col-md-1 col-lg-1 col-sm-1 col-xs-3"></html:div>
+								<html:div class="col-md-7 col-lg-7 col-xs-12 col-sm-12">
+									<!--<html:h1 style="color:#003770" >-->
+									<Text text="{i18n>lblRetireLive}" class="icon_row_header_textp4 redColor"></Text>
+									<!--</html:h1>-->
+								</html:div>
+								<html:div class="col-md-4 col-lg-4 col-xs-3 col-sm-1"></html:div>
+							</html:div>
+						</html:div>
+						<html:div class="row">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowpFamily">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<Image src="{dataModel>/images/Goback_hometown}" class="iconBigWidth" press="onLiveAfterRetirement" alt="1" id="idGoBackToHomeTown"></Image>
+									</html:div>
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<Image src="{dataModel>/images/Staywhere_I_am}" class="iconBigWidth" press="onLiveAfterRetirement" alt="2" id="idStayWhereIAm"></Image>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-5 col-lg-5 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="active" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="6"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="7"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/34}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar2"/>
+						<html:div>
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_row_header ">
+								<html:div class="col-md-1 col-lg-1 col-sm-1 col-xs-3"></html:div>
+								<html:div class="col-md-7 col-lg-7 col-xs-12 col-sm-12">
+									<!--<html:h1 style="color:#003770" >-->
+									<Text text="{i18n>lblRetireWhatPlan}" class="icon_row_header_textp4 redColor"></Text>
+									<!--</html:h1>-->
+								</html:div>
+								<html:div class="col-md-4 col-lg-4 col-xs-3 col-sm-1"></html:div>
+							</html:div>
+						</html:div>
+						<html:div class="row">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowpFamily5">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<Image src="{dataModel>/images/travelWithMyPartner}" class="iconBigWidth" press="onWhenRetire" alt="1" id="idTravelWithMyPartner"></Image>
+									</html:div>
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<Image src="{dataModel>/images/Have_a_Farm}" class="iconBigWidth" press="onWhenRetire" alt="2" id="idHaveAFarm"></Image>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-5 col-lg-5 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+						<html:div class="row">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 retirementRowImage2">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<Image src="{dataModel>/images/Enjoy_Social_Activities}" class="iconBigWidth" press="onWhenRetire" alt="3" id="idEnjoySocialActivities"></Image>
+									</html:div>
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<Image src="{dataModel>/images/Run_asmallBuisness}" class="iconBigWidth" press="onWhenRetire" alt="4" id="idRunASmallBuisness"></Image>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-5 col-lg-5 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="active" data-target="#carousel-example" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="6"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="7"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/35}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar2"/>
+						<html:div class="row">
+							<html:div class="col-md-8 col-lg-8 col-sm-1 col-xs-3">
+								<Text text="{i18n>lblRetireMoneySet}" class="solutiontitle1 whiteColor"></Text>
+							</html:div>
+						</html:div>
+						<html:div class="row ">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowp4 custROW ">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<HBox >
+											<Input
+												value="{path:'FData>/GloBalJson/familyMonthlySaved', type: 'sap.ui.model.type.Currency',formatOptions: { decimals:0, showMeasure: false}}"
+												class="inputfamily sapUiLargeMarginBegin inpuHegut redColor" liveChange="numberInputOnly"></Input><Input editable="false" value="VND" class="txtvndfamily txtHeight redColor"/></HBox>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="5"></html:li>
+							<html:li class="active" data-target="#carousel-example" data-slide-to="6"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="7"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/36}">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar2"/>
+						<HBox id="idRetirementAmountEn">
+							<html:div class="row">
+								<html:div class="col-md-11 col-lg-11 col-sm-1 col-xs-3">
+									<Text text="{i18n>lblRetireTotalIncome}" class="solutiontitle1 "></Text>
+								</html:div>
+							</html:div>
+						</HBox>
+						<HBox id="idRetirementAmountVi">
+							<html:div class="row">
+								<html:div class="col-md-11 col-lg-11 col-sm-1 col-xs-3">
+									<Text text="{i18n>lblRetireTotalIncome}" class="solutiontitle1 "></Text>
+								</html:div>
+							</html:div>
+						</HBox>
+						<html:div class="row ">
+							<html:div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 icon_rowp4 custROW ">
+								<html:div class="col-md-7 col-lg-7 col-xs-7 col-sm-7">
+									<html:div class="col-md-1 col-lg-1 col-sm-2 col-xs-2"></html:div>
+									<html:div class="col-md-5 col-lg-5 col-sm-6 col-xs-6 icon_row_header1">
+										<HBox >
+											<Input value="{path:'FData>/GloBalJson/totalIncome', type: 'sap.ui.model.type.Currency',formatOptions: { decimals:0, showMeasure: false}}"
+												class="inputfamily sapUiLargeMarginBegin inpuHegut redColor" liveChange="numberInputOnly"></Input><Input editable="false" value="VND" class="txtvndfamily txtHeight redColor"/></HBox>
+									</html:div>
+								</html:div>
+								<html:div class="col-md-6 col-lg-6 col-xs-5 col-sm-5"></html:div>
+							</html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="5"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="6"></html:li>
+							<html:li class="active" data-target="#carousel-example" data-slide-to="7"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect "/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+	</NavContainer>
+</mvc:View>

@@ -1,0 +1,354 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="com.saaprojSAADevlopment.controller.ProductView" xmlns:html="http://www.w3.org/1999/xhtml">
+	<NavContainer id="navCon7" width="100%" height="100%" class="navContainerControl sapUiSmallMarginBottom" afterNavigate="productNavigate">
+		<!--family-->
+		<App backgroundImage="{dataModel>/images/59}" id="idHealthFamily">
+			<pages>
+				<Page showHeader="false">
+<!--					<html:header class="header">
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar5"/>
+					</html:header>-->
+					<content>
+						<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>-->
+						<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar5"/>-->
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar5" class="header"/>
+						<html:div class="row productTop">
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 "></html:div>
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 containerInnerDiv rowLeft3 familyEndownment1 removeStyleProduct">
+								<html:div class="card cardData ">
+									<Image src="{dataModel>/images/Endownment}" class="card-img-top responsive imagePadding familyProduct1"/>
+									<html:div class="card-body cardBody1 familyPink1">
+										<Link text="{i18n>lblEndowment}" class="card-title cardTitle234" press="pdfOpen" tooltip="Endownment" wrapping="true" id="idEndowmentEn"/>
+										<Link text="{i18n>lblEndowment}" class="card-title cardTitle234Vi" press="pdfOpen" tooltip="Endownment" wrapping="true" id="idEndowmentVi"/>
+										<!--<Text text="{i18n>lblEndowment}" class="card-title cardTitle234"></Text>-->
+									</html:div>
+								</html:div>
+							</html:div>
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 containerInnerDiv familyEndownment2 removeStyleProduct">
+								<html:div class="card cardData ">
+									<Image src="{dataModel>/images/ULP}" class="card-img-top responsive imagePadding familyProduct2"/>
+									<html:div class="card-body cardBody1 ulpFamilyHealth familyPink2">
+										<!--<Text text="{i18n>lblUniversalLifeProtector}" class="card-title cardTitle1" ></Text>-->
+										<Link text="{i18n>lblUniversalLifeProtector}" class="card-title cardTitleFamily" press="pdfOpen" tooltip="UlProtectorPackage"
+											wrapping="true"/>
+									</html:div>
+								</html:div>
+							</html:div>
+							<html:div class="col-lg-3 col-md-3 "></html:div>
+						</html:div>
+						<html:div class="row ">
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 "></html:div>
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 productMarginLeft">
+								<html:div class="row">
+									<html:hr class="hr"></html:hr>
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+										<Image src="{dataModel>/images/prodAsset5}" class="imgPremium" width="34px"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+										<Text text="{i18n>lblIncreaseProtectionFamily}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+								<html:div class="row" style="margin-top:12px">
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+										<Image src="{dataModel>/images/prodAsset11}" width="34px"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+										<Text text="{i18n>lblLoyalityBonus}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+								<html:div class="row" style="margin-top:12px">
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+										<Image src="{dataModel>/images/prodAsset21}" class="imgPremium" width="34px"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+										<Text text="{i18n>lblPayPremium}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+							</html:div>
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " style="margin-left:0%">
+								<html:div class="row">
+									<html:hr class="hr"></html:hr>
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+										<Image src="{dataModel>/images/prodAsset6}"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+										<Text text="{i18n>lblAllRoundProtection}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+								<html:div class="row">
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+										<Image src="{dataModel>/images/prodAsset12}" class="productMaximum300"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+										<Text text="{i18n>lblMaximumAccident}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+								<html:div class="row">
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+										<Image src="{dataModel>/images/prodAsset18}" class="productIcon"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+										<Text text="{i18n>lblMultiplePayment}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+								<html:div class="row">
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+										<Image src="{dataModel>/images/prodAsset20}"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+										<Text text="{i18n>lblProvideHospitalization}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+							</html:div>
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 "></html:div>
+						</html:div>
+						<html:div class="row">
+							<Button text="{i18n>buttonText}" class=" buttonQuo buttonInner" press="submitQuotation"></Button>
+							<!--<Link text="Navigate to QQ" target="_blank" href="/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=410%26sap-language=EN%26sap-sec_session_created=X#InsuranceQuote-create" class="linkFont"/>-->
+						</html:div>
+					</content>
+				</Page>
+			</pages>
+		</App>
+		<!--Education-->
+		<App backgroundImage="{dataModel>/images/59}" id="idEducationProduct">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar5"/>
+						<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>-->
+						<html:div class="row productTop">
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 "></html:div>
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 containerInnerDiv rowLeft3 educatonProduct1 removeStyleProduct">
+								<html:div class="card cardData ">
+									<Image src="{dataModel>/images/education1}" class="card-img-top responsive imagePadding childrenProduct1 "/>
+									<html:div class="card-body cardBody1 educationPink1">
+										<!--<Text text="{i18n>lblEducationUl}" class="card-title cardTitle234"></Text>-->
+										<Link text="{i18n>lblEducationUl}" class="card-title cardTitle234" press="pdfOpen" tooltip="Education" id="idEducationProductPackEn"/>
+										<Link text="{i18n>lblEducationUl}" class="card-title cardTitleEducationVi" press="pdfOpen" tooltip="Education" id="idEducationProductPackVi"
+											wrapping="true"/>
+									</html:div>
+								</html:div>
+							</html:div>
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 containerInnerDiv educatonProduct2 removeStyleProduct" >
+								<html:div class="card cardData " >
+									<Image src="{dataModel>/images/ULEducation}" class="card-img-top responsive imagePadding childrenProduct2"/>
+									<html:div class="card-body cardBody1 educationPink2">
+										<!--<Text text="{i18n>lblLifeEduPackage}" class="card-title cardTitle1"></Text>-->
+										<Link text="{i18n>lblLifeEduPackage}" class="card-title cardTitle1" press="pdfOpen" tooltip="UlEducationPackage" wrapping="true"/>
+									</html:div>
+								</html:div>
+							</html:div>
+							<html:div class="col-lg-3 col-md-3 "></html:div>
+						</html:div>
+						<html:div class="row ">
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 "></html:div>
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 productMarginLeft">
+								<html:div class="row">
+									<html:hr class="hr"></html:hr>
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " style="margin-left:-2px">
+										<Image src="{dataModel>/images/prodAsset3}" class="imgPremium" width="34px"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+										<Text text="{i18n>lblEnsureChildrenEducation}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+								<html:div class="row">
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " style="margin-left:3px">
+										<Image src="{dataModel>/images/prodAsset5}" width="22px"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 " style="margin-left:-8px">
+										<Text text="{i18n>lblIncreaseProtection}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+								<html:div class="row">
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " style="margin-left:5px">
+										<Image src="{dataModel>/images/prodAsset15}" class="imgPremium" width="18px"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 " style="margin-left:-7px">
+										<Text text="{i18n>lblBonusForGraduation}" class="productText" ></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+								<html:div class="row">
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+										<Image src="{dataModel>/images/prodAsset17}" class="imgPremium" width="34px"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+										<Text text="{i18n>lblPayPremium}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+							</html:div>
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " style="margin-left:0%">
+								<html:div class="row">
+									<html:hr class="hr"></html:hr>
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " style="margin-top:-10px">
+										<Image src="{dataModel>/images/prodAsset4}"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+										<Text text="{i18n>lblLinhHoạt}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+								<html:div class="row">
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 "  style="margin-top:-10px">
+										<Image src="{dataModel>/images/prodAsset10}" class="productMaximum300"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+										<Text text="{i18n>lblCollbarationBetween}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+								<html:div class="row">
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+										<Image src="{dataModel>/images/prodAsset16}" class="productIcon"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+										<Text text="{i18n>lblEducationFund}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+								<html:div class="row">
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+										<Image src="{dataModel>/images/prodAsset22}"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+										<Text text="{i18n>lblBenefitWave}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+							</html:div>
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 "></html:div>
+						</html:div>
+						<html:div class="row">
+							<Button text="{i18n>buttonText}" class=" buttonQuo buttonInner" press="submitQuotation"></Button>
+							<!--<Link text="Navigate to QQ" target="_blank" href="/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=410%26sap-language=EN%26sap-sec_session_created=X#InsuranceQuote-create" class="linkFont"/>-->
+						</html:div>
+					</content>
+				</Page>
+			</pages>
+		</App>
+		<!--Retirement and Dream -->
+		<App backgroundImage="{dataModel>/images/59}" id="idRetirementDream">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar5"/>
+						<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>-->
+						<html:div class="row productTop">
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 "></html:div>
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 containerInnerDiv rowLeft3 dreamProduct1Class removeStyleProduct">
+								<html:div class="card cardData ">
+									<Image src="{dataModel>/images/Endownment}" class="card-img-top responsive imagePadding dreamProduct1"/>
+									<html:div class="card-body cardBody1 dreamPink1">
+										<!--<Text text="{i18n>lblEndowment}" class="card-title cardTitle234"></Text>-->
+										<Link text="{i18n>lblEndowment}" class="card-title cardTitle234" press="pdfOpen" tooltip="DreamEndowment" id="idEndowmentDreamEn"/>
+										<Link text="{i18n>lblEndowment}" class="card-title cardTitle234Vi" press="pdfOpen" tooltip="DreamEndowment" wrapping="true"
+											id="idEndowmentDreamVi"/>
+									</html:div>
+								</html:div>
+							</html:div>
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 containerInnerDiv dreamProduct2Class removeStyleProduct">
+								<html:div class="card cardData ">
+									<Image src="{dataModel>/images/ULEducation} " class="card-img-top responsive imagePadding dreamProduct2"/>
+									<html:div class="card-body cardBody1 dreamPink2">
+										<!--<Text text="{i18n>lblUniversalLifeLimited}" class="card-title cardTitle1"></Text>-->
+										<Link text="{i18n>lblUniversalLifeLimited}" class="card-title cardTitle1" press="pdfOpen" tooltip="UlLimitedPaymentPackage" wrapping="true"/>
+									</html:div>
+								</html:div>
+							</html:div>
+							<html:div class="col-lg-3 col-md-3 "></html:div>
+						</html:div>
+						<html:div class="row ">
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 "></html:div>
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 productMarginLeft">
+								<html:div class="row">
+									<html:hr class="hr"></html:hr>
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+										<Image src="{dataModel>/images/prodAsset5}" width="18px"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+										<Text text="{i18n>lblIncreaseProtectionFamily}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+								<html:div class="row" style="margin-top:6px">
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " >
+										<Image src="{dataModel>/images/prodAsset11}" width="34px"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+										<Text text="{i18n>lblLoyalityBonus}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+								<html:div class="row" style="margin-top:6px">
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+										<Image src="{dataModel>/images/prodAsset21}" class="imgPremium" width="34px"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+										<Text text="{i18n>lblPayPremium}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+							</html:div>
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " style="margin-left:0%">
+								<html:div class="row">
+									<html:hr class="hr"></html:hr>
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+										<Image src="{dataModel>/images/prodAsset7}" width="18px"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+										<Text text="{i18n>lblShortTermPayment}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+								<html:div class="row">
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+										<Image src="{dataModel>/images/prodAsset13}" class="productMaximum300"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+										<Text text="{i18n>lblSavingBenefitOptimization}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+								<html:div class="row" style="margin-top:5px">
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+										<Image src="{dataModel>/images/prodAsset19}" class="productIcon" width="20px"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+										<Text text="{i18n>lblProtectionBenefitProportional}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+								<html:div class="row">
+									<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+										<Image src="{dataModel>/images/prodAsset24}" width="20px"></Image>
+									</html:div>
+									<html:div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+										<Text text="{i18n>lblFlexibleWithdrawMoney}" class="productText"></Text>
+									</html:div>
+									<html:div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 "></html:div>
+								</html:div>
+							</html:div>
+							<html:div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 "></html:div>
+						</html:div>
+						<html:div class="row">
+							<Button text="{i18n>buttonText}" class=" buttonQuo buttonInner" press="submitQuotation"></Button>
+							<!--<Link text="Navigate to QQ" target="_blank" href="/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=410%26sap-language=EN%26sap-sec_session_created=X#InsuranceQuote-create" class="linkFont"/>-->
+						</html:div>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</NavContainer>
+</mvc:View>

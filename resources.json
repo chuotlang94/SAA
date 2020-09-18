@@ -1,0 +1,881 @@
+{
+    "resources": [
+        {
+            "name": "controller/Education.controller.js"
+        },
+        {
+            "name": "controller/HealthView.controller.js"
+        },
+        {
+            "name": "controller/App.controller.js"
+        },
+        {
+            "name": "controller/videoScreen.controller.js"
+        },
+        {
+            "name": "controller/DetailsPage.controller.js"
+        },
+        {
+            "name": "controller/Home.controller.js"
+        },
+        {
+            "name": "controller/View1.controller.js"
+        },
+        {
+            "name": "controller/InterestView.controller.js"
+        },
+        {
+            "name": "controller/RetirementView.controller.js"
+        },
+        {
+            "name": "controller/CustomerInforamation.controller.js"
+        },
+        {
+            "name": "controller/ContactUs.controller.js"
+        },
+        {
+            "name": "controller/DreamsView.controller.js"
+        },
+        {
+            "name": "controller/ProductView.controller.js"
+        },
+        {
+            "name": "controller/Navbar.controller.js"
+        },
+        {
+            "name": "controller/SolutionView.controller.js"
+        },
+        {
+            "name": "controller/FamilyView.controller.js"
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "css/bootstrap.css"
+        },
+        {
+            "name": "css/style.css"
+        },
+        {
+            "name": ".user.project.json"
+        },
+        {
+            "name": "utils/formatter.js"
+        },
+        {
+            "name": "utils/UIHelper.js"
+        },
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "media/english/GovernmentOfficer.svg"
+        },
+        {
+            "name": "media/english/Minus.svg"
+        },
+        {
+            "name": "media/english/WorldExplore.svg"
+        },
+        {
+            "name": "media/english/ProvidingFamily.svg"
+        },
+        {
+            "name": "media/english/ChildFemale.svg"
+        },
+        {
+            "name": "media/english/MySelf.svg"
+        },
+        {
+            "name": "media/english/SocialActivities.svg"
+        },
+        {
+            "name": "media/english/HomeScreenEnglishEn.svg"
+        },
+        {
+            "name": "media/english/Female.svg"
+        },
+        {
+            "name": "media/english/OwnedHome.svg"
+        },
+        {
+            "name": "media/english/Married.svg"
+        },
+        {
+            "name": "media/english/ExploringWorld.svg"
+        },
+        {
+            "name": "media/english/MyParent.svg"
+        },
+        {
+            "name": "media/english/WorryRetirement.svg"
+        },
+        {
+            "name": "media/english/Teacher.svg"
+        },
+        {
+            "name": "media/english/Laywer.svg"
+        },
+        {
+            "name": "media/english/WithFamily.svg"
+        },
+        {
+            "name": "media/english/FutureChildren.svg"
+        },
+        {
+            "name": "media/english/SmallBuisness.svg"
+        },
+        {
+            "name": "media/english/Artist.svg"
+        },
+        {
+            "name": "media/english/HomeScreenEnglishEn.jpg"
+        },
+        {
+            "name": "media/english/interest1.svg"
+        },
+        {
+            "name": "media/english/MyPartner.svg"
+        },
+        {
+            "name": "media/english/CriticalIllness.svg"
+        },
+        {
+            "name": "media/english/StayWhereIAm.svg"
+        },
+        {
+            "name": "media/english/DreamBack2.svg"
+        },
+        {
+            "name": "media/english/StayingHealthy.svg"
+        },
+        {
+            "name": "media/english/HaveAFarm.svg"
+        },
+        {
+            "name": "media/english/WithKids.svg"
+        },
+        {
+            "name": "media/english/RetirementBack2.svg"
+        },
+        {
+            "name": "media/english/plus.svg"
+        },
+        {
+            "name": "media/english/BackToHome.svg"
+        },
+        {
+            "name": "media/english/Renting.svg"
+        },
+        {
+            "name": "media/english/SuccessfulBuisnessPerson.svg"
+        },
+        {
+            "name": "media/english/BuisnessLeader.svg"
+        },
+        {
+            "name": "media/english/AnAccident.svg"
+        },
+        {
+            "name": "media/english/retirement2.svg"
+        },
+        {
+            "name": "media/english/Single.svg"
+        },
+        {
+            "name": "media/english/TravelWithPartner.svg"
+        },
+        {
+            "name": "media/english/QualityHealthcare.svg"
+        },
+        {
+            "name": "media/english/NiceHouseApartment.svg"
+        },
+        {
+            "name": "media/english/GenderMale.svg"
+        },
+        {
+            "name": "media/english/FamilyBack2.svg"
+        },
+        {
+            "name": "media/english/ChildMale.svg"
+        },
+        {
+            "name": "media/english/GenderFemale.svg"
+        },
+        {
+            "name": "media/english/DreamHouseCar.svg"
+        },
+        {
+            "name": "media/english/HappyChildren.svg"
+        },
+        {
+            "name": "media/english/MyChildren.svg"
+        },
+        {
+            "name": "media/english/FemaleInc.svg"
+        },
+        {
+            "name": "media/english/bubble4.svg"
+        },
+        {
+            "name": "media/english/HaveANiceCar.svg"
+        },
+        {
+            "name": "media/english/Male.svg"
+        },
+        {
+            "name": "media/english/Doctor.svg"
+        },
+        {
+            "name": "media/pdf/Endownment.pdf"
+        },
+        {
+            "name": "media/pdf/ULEduPackage.pdf"
+        },
+        {
+            "name": "media/pdf/ULProtectorPackage.pdf"
+        },
+        {
+            "name": "media/pdf/ULLimitedPaymentPackage.pdf"
+        },
+        {
+            "name": "media/background/58.jpg"
+        },
+        {
+            "name": "media/background/children44.jpg"
+        },
+        {
+            "name": "media/background/23.jpg"
+        },
+        {
+            "name": "media/background/15.jpg"
+        },
+        {
+            "name": "media/background/ULEducation.png"
+        },
+        {
+            "name": "media/background/dream55.jpg"
+        },
+        {
+            "name": "media/background/43.jpg"
+        },
+        {
+            "name": "media/background/27.jpg"
+        },
+        {
+            "name": "media/background/31.jpg"
+        },
+        {
+            "name": "media/background/54.jpg"
+        },
+        {
+            "name": "media/background/11.jpg"
+        },
+        {
+            "name": "media/background/46.jpg"
+        },
+        {
+            "name": "media/background/20.jpg"
+        },
+        {
+            "name": "media/background/7.jpg"
+        },
+        {
+            "name": "media/background/education1.png"
+        },
+        {
+            "name": "media/background/35.jpg"
+        },
+        {
+            "name": "media/background/18.jpg"
+        },
+        {
+            "name": "media/background/32.jpg"
+        },
+        {
+            "name": "media/background/children45.jpg"
+        },
+        {
+            "name": "media/background/42.jpg"
+        },
+        {
+            "name": "media/background/Dream2Back.svg"
+        },
+        {
+            "name": "media/background/26.jpg"
+        },
+        {
+            "name": "media/background/dream56.jpg"
+        },
+        {
+            "name": "media/background/57.jpg"
+        },
+        {
+            "name": "media/background/14.jpg"
+        },
+        {
+            "name": "media/background/10.jpg"
+        },
+        {
+            "name": "media/background/53.jpg"
+        },
+        {
+            "name": "media/background/36.jpg"
+        },
+        {
+            "name": "media/background/19.jpg"
+        },
+        {
+            "name": "media/background/47.jpg"
+        },
+        {
+            "name": "media/background/21.jpg"
+        },
+        {
+            "name": "media/background/interestBackground.png"
+        },
+        {
+            "name": "media/background/interest1.svg"
+        },
+        {
+            "name": "media/background/6.jpg"
+        },
+        {
+            "name": "media/background/dream57.jpg"
+        },
+        {
+            "name": "media/background/41.jpg"
+        },
+        {
+            "name": "media/background/Children2Back.svg"
+        },
+        {
+            "name": "media/background/33.jpg"
+        },
+        {
+            "name": "media/background/25.jpg"
+        },
+        {
+            "name": "media/background/children46.jpg"
+        },
+        {
+            "name": "media/background/8.jpg"
+        },
+        {
+            "name": "media/background/13.jpg"
+        },
+        {
+            "name": "media/background/56.jpg"
+        },
+        {
+            "name": "media/background/Health2BackImage.svg"
+        },
+        {
+            "name": "media/background/5.jpg"
+        },
+        {
+            "name": "media/background/SPA.png"
+        },
+        {
+            "name": "media/background/37.jpg"
+        },
+        {
+            "name": "media/background/Endownment.png"
+        },
+        {
+            "name": "media/background/60.jpg"
+        },
+        {
+            "name": "media/background/29.jpg"
+        },
+        {
+            "name": "media/background/Retirement2.svg"
+        },
+        {
+            "name": "media/background/52.jpg"
+        },
+        {
+            "name": "media/background/children43.jpg"
+        },
+        {
+            "name": "media/background/48.jpg"
+        },
+        {
+            "name": "media/background/49.jpg"
+        },
+        {
+            "name": "media/background/9.jpg"
+        },
+        {
+            "name": "media/background/dream58.jpg"
+        },
+        {
+            "name": "media/background/59.jpg"
+        },
+        {
+            "name": "media/background/24.jpg"
+        },
+        {
+            "name": "media/background/16.jpg"
+        },
+        {
+            "name": "media/background/39.jpg"
+        },
+        {
+            "name": "media/background/dream54.jpg"
+        },
+        {
+            "name": "media/background/50.jpg"
+        },
+        {
+            "name": "media/background/children47.jpg"
+        },
+        {
+            "name": "media/background/30.jpg"
+        },
+        {
+            "name": "media/background/44.jpg"
+        },
+        {
+            "name": "media/background/28.jpg"
+        },
+        {
+            "name": "media/background/61.jpg"
+        },
+        {
+            "name": "media/background/45.jpg"
+        },
+        {
+            "name": "media/background/38.jpg"
+        },
+        {
+            "name": "media/background/12.jpg"
+        },
+        {
+            "name": "media/background/51.jpg"
+        },
+        {
+            "name": "media/background/55.jpg"
+        },
+        {
+            "name": "media/background/34.jpg"
+        },
+        {
+            "name": "media/background/17.jpg"
+        },
+        {
+            "name": "media/background/40.jpg"
+        },
+        {
+            "name": "media/background/home_screen.jpg"
+        },
+        {
+            "name": "media/background/ULP.png"
+        },
+        {
+            "name": "media/veitnamese/mySelf.svg"
+        },
+        {
+            "name": "media/veitnamese/niceHouseOrApartment.svg"
+        },
+        {
+            "name": "media/veitnamese/toExploreTheWorld.svg"
+        },
+        {
+            "name": "media/veitnamese/artist.svg"
+        },
+        {
+            "name": "media/veitnamese/anAccident.svg"
+        },
+        {
+            "name": "media/veitnamese/qualityHealthCare.svg"
+        },
+        {
+            "name": "media/veitnamese/teacher.svg"
+        },
+        {
+            "name": "media/veitnamese/WithFamily.svg"
+        },
+        {
+            "name": "media/veitnamese/successfulBuisnessPerson.svg"
+        },
+        {
+            "name": "media/veitnamese/governmentOfficer.svg"
+        },
+        {
+            "name": "media/veitnamese/myParent.svg"
+        },
+        {
+            "name": "media/veitnamese/travelWithPartner.svg"
+        },
+        {
+            "name": "media/veitnamese/successfulAndHappyChildren.svg"
+        },
+        {
+            "name": "media/veitnamese/renting.svg"
+        },
+        {
+            "name": "media/veitnamese/retirement2Back.svg"
+        },
+        {
+            "name": "media/veitnamese/childrenEducation.svg"
+        },
+        {
+            "name": "media/veitnamese/GoBack2Home.svg"
+        },
+        {
+            "name": "media/veitnamese/married.svg"
+        },
+        {
+            "name": "media/veitnamese/dream2Back.svg"
+        },
+        {
+            "name": "media/veitnamese/interestVi.svg"
+        },
+        {
+            "name": "media/veitnamese/niceCar.svg"
+        },
+        {
+            "name": "media/veitnamese/socialActivities.svg"
+        },
+        {
+            "name": "media/veitnamese/ChildrenBack2.svg"
+        },
+        {
+            "name": "media/veitnamese/haveAFarm.svg"
+        },
+        {
+            "name": "media/veitnamese/buisnessLeader.svg"
+        },
+        {
+            "name": "media/veitnamese/FamilyBack2.svg"
+        },
+        {
+            "name": "media/veitnamese/HealthBack2.svg"
+        },
+        {
+            "name": "media/veitnamese/HomeScreenEnglishVi.png"
+        },
+        {
+            "name": "media/veitnamese/dreamHouseCar.svg"
+        },
+        {
+            "name": "media/veitnamese/stayWhereIAm.svg"
+        },
+        {
+            "name": "media/veitnamese/stayingHealth.svg"
+        },
+        {
+            "name": "media/veitnamese/Criticalllness.svg"
+        },
+        {
+            "name": "media/veitnamese/HomeScreenEnglishVi.svg"
+        },
+        {
+            "name": "media/veitnamese/myPartner.svg"
+        },
+        {
+            "name": "media/veitnamese/exploringTheWorld.svg"
+        },
+        {
+            "name": "media/veitnamese/providingForFamily.svg"
+        },
+        {
+            "name": "media/veitnamese/lawyer.svg"
+        },
+        {
+            "name": "media/veitnamese/ownedHome.svg"
+        },
+        {
+            "name": "media/veitnamese/Doctor.svg"
+        },
+        {
+            "name": "media/veitnamese/single.svg"
+        },
+        {
+            "name": "media/veitnamese/smallBuisness.svg"
+        },
+        {
+            "name": "media/veitnamese/withKids.svg"
+        },
+        {
+            "name": "media/veitnamese/worryRetirement.svg"
+        },
+        {
+            "name": "media/veitnamese/myChildren.svg"
+        },
+        {
+            "name": "media/veitnamese/HomeScreenEnglishVi.jpg"
+        },
+        {
+            "name": "media/icon/MBAL_Logo.svg"
+        },
+        {
+            "name": "media/icon/contact/location.svg"
+        },
+        {
+            "name": "media/icon/contact/Home.svg"
+        },
+        {
+            "name": "media/icon/contact/contact.svg"
+        },
+        {
+            "name": "media/icon/contact/Fax.svg"
+        },
+        {
+            "name": "media/icon/contact/Mail.svg"
+        },
+        {
+            "name": "media/icon/contact/Phone.svg"
+        },
+        {
+            "name": "media/icon/childEdu/Male.svg"
+        },
+        {
+            "name": "media/icon/product/prodAsset24.svg"
+        },
+        {
+            "name": "media/icon/product/prodAsset4.svg"
+        },
+        {
+            "name": "media/icon/product/Endownment.png"
+        },
+        {
+            "name": "media/icon/product/prodAsset16.svg"
+        },
+        {
+            "name": "media/icon/product/prodAsset20.svg"
+        },
+        {
+            "name": "media/icon/product/SPA.png"
+        },
+        {
+            "name": "media/icon/product/prodAsset19.svg"
+        },
+        {
+            "name": "media/icon/product/prodAsset12.svg"
+        },
+        {
+            "name": "media/icon/product/prodAsset3.svg"
+        },
+        {
+            "name": "media/icon/product/prodAsset15.svg"
+        },
+        {
+            "name": "media/icon/product/prodAsset21.svg"
+        },
+        {
+            "name": "media/icon/product/prodAsset7.svg"
+        },
+        {
+            "name": "media/icon/product/education1.png"
+        },
+        {
+            "name": "media/icon/product/prodAsset8.svg"
+        },
+        {
+            "name": "media/icon/product/prodAsset11.svg"
+        },
+        {
+            "name": "media/icon/product/prodAsset26.svg"
+        },
+        {
+            "name": "media/icon/product/prodAsset18.svg"
+        },
+        {
+            "name": "media/icon/product/ULEducation.png"
+        },
+        {
+            "name": "media/icon/product/prodAsset22.svg"
+        },
+        {
+            "name": "media/icon/product/prodAsset6.svg"
+        },
+        {
+            "name": "media/icon/product/prodAsset9.svg"
+        },
+        {
+            "name": "media/icon/product/prodAsset10.svg"
+        },
+        {
+            "name": "media/icon/product/prodAsset14.svg"
+        },
+        {
+            "name": "media/icon/product/prodAsset25.svg"
+        },
+        {
+            "name": "media/icon/product/prodAsset17.svg"
+        },
+        {
+            "name": "media/icon/product/prodAsset23.svg"
+        },
+        {
+            "name": "media/icon/product/prodAsset5.svg"
+        },
+        {
+            "name": "media/icon/product/ULP.png"
+        },
+        {
+            "name": "media/icon/product/prodAsset13.svg"
+        },
+        {
+            "name": "media/icon/reti_Dream/55_60.svg"
+        },
+        {
+            "name": "media/icon/reti_Dream/10_15_20.svg"
+        },
+        {
+            "name": "media/icon/logomau.svg"
+        },
+        {
+            "name": "media/icon/childeducation/Female.svg"
+        },
+        {
+            "name": "media/icon/childeducation/map.svg"
+        },
+        {
+            "name": "media/icon/logoMBAL.svg"
+        },
+        {
+            "name": "media/icon/Logo-White.png"
+        },
+        {
+            "name": "media/icon/Menubar.svg"
+        },
+        {
+            "name": "media/icon/sidebar/Refresh.svg"
+        },
+        {
+            "name": "media/icon/sidebar/Home.svg"
+        },
+        {
+            "name": "media/icon/sidebar/information.svg"
+        },
+        {
+            "name": "media/icon/sidebar/Phone.svg"
+        },
+        {
+            "name": "media/icon/sidebar/Mail.svg"
+        },
+        {
+            "name": "media/icon/contactStatusLogo.svg"
+        },
+        {
+            "name": "media/icon/Checklist.svg"
+        },
+        {
+            "name": "media/icon/aboutyou/plus.svg"
+        },
+        {
+            "name": "media/icon/aboutyou/Calender_Icon.svg"
+        },
+        {
+            "name": "media/icon/healthy.svg"
+        },
+        {
+            "name": "media/icon/family/familyData.svg"
+        },
+        {
+            "name": "media/icon/Logo-White.svg"
+        },
+        {
+            "name": "localService/metadata.xml"
+        },
+        {
+            "name": "i18n/i18n_vi.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": ".project.json"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "model/models.js"
+        },
+        {
+            "name": "resources.json",
+            "merged": true
+        },
+        {
+            "name": "view/Navbar6.view.xml"
+        },
+        {
+            "name": "view/HealthView.view.xml"
+        },
+        {
+            "name": "view/ProductView.view.xml"
+        },
+        {
+            "name": "view/RetirementView.view.xml"
+        },
+        {
+            "name": "view/ContactUs.view.xml"
+        },
+        {
+            "name": "view/View1.view.xml"
+        },
+        {
+            "name": "view/DetailsPage.view.xml"
+        },
+        {
+            "name": "view/DreamsView.view.xml"
+        },
+        {
+            "name": "view/App.view.xml"
+        },
+        {
+            "name": "view/Navbar1.view.xml"
+        },
+        {
+            "name": "view/Navbar4.view.xml"
+        },
+        {
+            "name": "view/Home.view.xml"
+        },
+        {
+            "name": "view/Navbar7.view.xml"
+        },
+        {
+            "name": "view/CustomerInforamation.view.xml"
+        },
+        {
+            "name": "view/videoScreen.view.xml"
+        },
+        {
+            "name": "view/Navbar5.view.xml"
+        },
+        {
+            "name": "view/Navbar.view.xml"
+        },
+        {
+            "name": "view/InterestView.view.xml"
+        },
+        {
+            "name": "view/Navbar2.view.xml"
+        },
+        {
+            "name": "view/FamilyView.view.xml"
+        },
+        {
+            "name": "view/Education.view.xml"
+        },
+        {
+            "name": "view/SolutionView.view.xml"
+        },
+        {
+            "name": "manifest.json"
+        },
+        {
+            "name": "index.html"
+        }
+    ]
+}

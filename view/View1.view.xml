@@ -1,0 +1,237 @@
+<mvc:View controllerName="com.saaprojSAADevlopment.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" id="app">
+	<!--<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>-->
+	<NavContainer id="navCon" width="100%" height="100%" class="navContainerControl sapUiSmallMarginBottom" navigate="aboutYouController">
+		<App backgroundImage="{dataModel>/images/5}" id="idPersonPage">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>
+						<Text text="{i18n>lblTellAboutYou}" class="solutiontitle1 redColor"></Text>
+						<html:div class="row datePickerRow">
+							<html:div class="col-md-1 col-lg-1 col-sm-12 col-xs-3"></html:div>
+							<html:div class="col-md-5 col-lg-5 col-xs-12 col-sm-12 card_custom cardDiv">
+								<Input id="input_name_custom" value="{GData>/GloBalJson/nameOfPerson}" placeholder="{i18n>placeHolderName}"
+									class="inputAbout inputAbout2 inputAbout3 inputDoteed inputCapital" change="onInputPerson"></Input>
+								<DatePicker id="date1" placeholder="{i18n>placeHolderDate}" displayFormat="dd/MM/yyyy" valueFormat="yyyy-MM-ddT00:00:00"
+									class="dateMargin inputDatePicker datePickerInput" value="{GData>/GloBalJson/dobOfPerson}" change="onDobValidation"></DatePicker>
+							</html:div>
+							<!--value="{path:'GData>/GloBalJson/dobOfPartner' , type:'sap.ui.model.type.Date', formatOptions: { pattern: 'dd/MM/yyyy'}}"-->
+							<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12 "></html:div>
+						</html:div>
+						<html:div class="row rowPadMarg">
+							<html:div class="col-md-1 col-lg-1 col-sm-12 col-xs-3"></html:div>
+							<html:div class="col-md-9 col-lg-9 col-xs-12 col-sm-12">
+								<html:div class="col-md-3 col-lg-3 col-xs-12 col-sm-12" style="width: 18% !important;">
+									<Text text="{i18n>lblGender}" class="textFontSize personGender"></Text>
+								</html:div>
+								<html:div class="col-md-9 col-lg-9 col-xs-12 col-sm-12" style="margin-left: -27px;">
+									<Image src="{dataModel>/images/Gender_Male}" id="idS1Male" class="imageWidth " press="onImageButtonGender" alt="1"></Image>
+									<Image src="{dataModel>/images/Gender_Female}" id="idS1Female" class="imageWidth" press="onImageButtonGender" alt="2"></Image>
+								</html:div>
+							</html:div>
+							<html:div class="col-md-2 col-lg-2 col-xs-12 col-sm-12"></html:div>
+						</html:div>
+						<html:div class="row">
+							<html:div class="col-md-1 col-lg-1 col-sm-12 col-xs-3"></html:div>
+							<html:div class="col-md-9 col-lg-9 col-xs-12 col-sm-12">
+								<html:div class="col-md-3 col-lg-3 col-xs-12 col-sm-12" style="width: 18% !important;">
+									<Text text="{i18n>lblMarriedStatus}" class="textFontSize textFontSize1 marritalStatus"></Text>
+								</html:div>
+								<html:div class="col-md-9 col-lg-9 col-xs-12 col-sm-12" style="margin-left: -27px;">
+									<Image src="{dataModel>/images/Single}" id="idS1Single" class="imageWidth" press="onImageButtonPressed" alt="Single"></Image>
+									<Image src="{dataModel>/images/Married}" id="idS1Married" class="imageWidth" press="onImageButtonPressed" alt="Married"></Image>
+									<Image src="{dataModel>/images/WithKids}" id="idS1WithKids" class="imageWidth" press="onImageButtonPressed" alt="WithKids"></Image>
+								</html:div>
+							</html:div>
+							<html:div class="col-md-2 col-lg-2 col-xs-12 col-sm-12"></html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="active" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="5"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/6}" id="idPartnerApp">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>
+						<Text text="{i18n>lblTellAboutPartner}" class="solutiontitle1 redColor"></Text>
+						<html:div class="row datePickerRow">
+							<html:div class="col-md-1 col-lg-1 col-sm-12 col-xs-3"></html:div>
+							<html:div class="col-md-5 col-lg-5 col-xs-12 col-sm-12 card_custom cardDiv">
+								<Input id="input_name_custom1" placeholder="{i18n>placeHolderName}" value="{GData>/GloBalJson/nameOfPartner}"
+									class="inputAbout inputAbout2 inputAbout3 inputDoteed inputCapital" change="onInputPartner"></Input>
+								<DatePicker id="date2" placeholder="{i18n>placeHolderDate}" class="dateMargin inputDatePicker datePickerInput " valueFormat="yyyy-MM-ddT00:00:00"
+									displayFormat="dd/MM/yyyy" value="{GData>/GloBalJson/dobOfPartner}" change="dobPartnerValidation"></DatePicker>
+							</html:div>
+							<html:div class="col-md-6 col-lg-6 col-xs-12 col-sm-12 "></html:div>
+						</html:div>
+						<html:div class="row rowPadMarg2">
+							<html:div class="col-md-1 col-lg-1 col-sm-12 col-xs-3"></html:div>
+							<html:div class="col-md-7 col-lg-7 col-xs-12 col-sm-12">
+								<Text text="{i18n>lblGender}" class="textFontSize "></Text>
+								<Image src="{dataModel>/images/Gender_Male}" id="idS1Male1" class="imageWidth" press="onImageButtonGenderPartner" alt="1"></Image>
+								<Image src="{dataModel>/images/Gender_Female}" id="idS1Female1" class="imageWidth" press="onImageButtonGenderPartner" alt="2"></Image>
+							</html:div>
+							<html:div class="col-md-4 col-lg-4 col-xs-12 col-sm-12"></html:div>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="active" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="5"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/7}" id="idChildrenPage">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>
+						<HBox id="idChildrenIncrementEn">
+							<Text text="{i18n>lblHowManyKidsDoYouHave}" class="solutiontitle1 redColor"></Text>
+						</HBox>
+						<HBox id="idChildrenIncrementVi">
+							<html:div class="row">
+								<html:div class="col-md-9 col-lg-9">
+									<Text text="{i18n>lblHowManyKidsDoYouHave}" class="solutiontitle1 redColor"></Text>
+								</html:div>
+							</html:div>
+						</HBox>
+						<html:div class="row h-100 dynamicRow">
+							<HBox class="HBoxLeft" id="idHBoxFemale">
+								<Image src="{dataModel>/images/Female}" class="imageWidth"></Image>
+								<VBox class="vBoxTop">
+									<Button icon="{dataModel>/images/plus}" press="childFemaleIncrament1" class="minusButton"></Button>
+									<Text text="{path:'GData>/GloBalJson/femaleChild'}" class="increamentIcon"></Text>
+									<Button icon="{dataModel>/images/Minus}" press="childFemaleDecreament1" class="minusButton"></Button>
+								</VBox>
+							</HBox>
+						</html:div>
+						<html:div class="row h-100 dynamicRow">
+							<HBox class="HBoxLeft" id="idHBoxMale">
+								<Image src="{dataModel>/images/Male}" class="imageWidth"></Image>
+								<VBox class="vBoxTop">
+									<Button icon="{dataModel>/images/plus}" press="childMaleIncrament" class="minusButton"></Button>
+									<Text text="{path:'GData>/GloBalJson/maleChild'}" class="increamentIcon"></Text>
+									<Button icon="{dataModel>/images/Minus}" press="childMaleDecreament" class="minusButton"></Button>
+								</VBox>
+							</HBox>
+						</html:div>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="active" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="5"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/8}" id="idLivingArrangementPage">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>
+						<HBox id="idLivingArrngementEn">
+							<Text text="{i18n>lblLivingArrangement}" class="solutiontitle1 whiteColor"></Text>
+						</HBox>
+						<HBox id="idLivingArrngementVi">
+							<html:div class="row">
+								<html:div class="col-md-9 col-lg-9">
+									<Text text="{i18n>lblLivingArrangement}" class="solutiontitle1 whiteColor"></Text>
+								</html:div>
+							</html:div>
+						</HBox>
+						<HBox class="HboxTop">
+							<Image src="{dataModel>/images/With_Family}" alt="WITHFAMILY" press="onSelectLiving" id="idWithFamily" class="iconBigWidth"></Image>
+							<Image src="{dataModel>/images/Renting}" press="onSelectLiving" id="idWithRenting" alt="RENTING" class="iconBigWidth livingArrngment2Image"></Image>
+						</HBox>
+						<Image src="{dataModel>/images/Owned_Home}" id="idWithOwnedHome" class="ownedHomeImage iconBigWidth" press="onSelectLiving" alt="OWNEDHOME"></Image>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="active" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="5"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+		<App backgroundImage="{dataModel>/images/9}" id="idTopPrioritiesPage">
+			<pages>
+				<Page showHeader="false">
+					<content>
+						<mvc:XMLView viewName="com.saaprojSAADevlopment.view.Navbar"/>
+						<HBox id="idTopPrioritiesEn">
+								<Text text="{i18n>lblTopPriorities}" class="solutiontitle1 redColor"></Text>
+						</HBox>
+							<HBox id="idTopPrioritiesVi">
+							<html:div class="row">
+								<html:div class="col-md-9 col-lg-9">
+									<Text text="{i18n>lblTopPriorities}" class="solutiontitle1 redColor"></Text>
+								</html:div>
+							</html:div>
+						</HBox>
+					
+						<HBox class="icon6HBOX">
+							<Image src="{dataModel>/images/Providing_for_family}" class="iconBigWidth productSelection" alt="FAMILYSUPP" id="idProvidingFamily"
+								press="onPriorities"></Image>
+							<Image src="{dataModel>/images/Buying_dreamhouse_car} " class="iconBigWidth icon6MargImage2 productSelection" alt="BUYCARHOUS"
+								id="idBuyingDreamCar" press="onPriorities"></Image>
+							<Image src="{dataModel>/images/The_future_Education}" class="iconBigWidth productSelection" alt="CHILDEDU" id="idFutureEducation"
+								press="onPriorities"></Image>
+						</HBox>
+						<HBox class="icon6HobxRow2">
+							<Image src="{dataModel>/images/Worryfree_retirement}" alt="RETIRE" class="iconBigWidth productSelection" id="idWorryFreeRetirement"
+								press="onPriorities"></Image>
+							<Image src="{dataModel>/images/Exploring_World}" alt="TRAVEL" class="iconBigWidth icon6MargImage2 productSelection" id="idExploringWorld"
+								press="onPriorities"></Image>
+							<Image src="{dataModel>/images/Staying_Healthy}" class="iconBigWidth productSelection" alt="HEALTH" id="idStayingHealthy"
+								press="onPriorities"></Image>
+						</HBox>
+					</content>
+					<html:footer class="footer">
+						<Button icon="sap-icon://slim-arrow-left" press="handleNavPrev" class="saaNav buttonArrowLeft arrowEffect"/>
+						<html:ol class="bullets carousel-indicators">
+							<html:li class="" data-target="#carousel-example" data-slide-to="1"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="2"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="3"></html:li>
+							<html:li class="" data-target="#carousel-example" data-slide-to="4"></html:li>
+							<html:li class="active" data-target="#carousel-example" data-slide-to="5"></html:li>
+						</html:ol>
+						<Button icon="sap-icon://slim-arrow-right" press="handleNavNext" class="right float-right saaNav buttonArrow arrowEffect"/>
+					</html:footer>
+				</Page>
+			</pages>
+		</App>
+	</NavContainer>
+</mvc:View>
